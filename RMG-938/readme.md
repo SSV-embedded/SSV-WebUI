@@ -6,15 +6,15 @@ Nach einer erfolgreichen Anmeldung wird Ihnen im Browserfenster eine horizontale
 
 ![Übersicht: Menü](https://ssv-comm.de/forum/bilder/938-menue.png)
 
-## 1. Menüleistenfunktion: Status 
+## 1. Status 
 
 ![Menü: Status](https://ssv-comm.de/forum/bilder/938-status.png) 
 
 Übersichtsseite mit dem aktuellen Systemstatus sowie den Adressen aller IP-Schnittstellen plus Zusatzinformationen zu DNS-Servern und dem Default-Gateway.
 
-## 2.1 Menüleistenfunktion: System/System identification 
+## 2.1 System > System identification 
 
-![Menü: System/System identification](https://ssv-comm.de/forum/bilder/938-system_1.png) 
+![Menü: System > System identification](https://ssv-comm.de/forum/bilder/938-system_1.png) 
 
 In dieser Webseite des SSV/WebUI sind verschiedenen Eigenschaften zur Gateway-Identifikation zusammengefasst.
 
@@ -28,9 +28,9 @@ In dieser Webseite des SSV/WebUI sind verschiedenen Eigenschaften zur Gateway-Id
 
 **Indentify device through front LED:** Ein Druck auf die Flash-Schaltfläche bewirkt, dass eine der Frontplatten-LEDs des Gateways ca. 5 Sekunden lang blinkt. Dadurch lässt sich ein bestimmtes Gateway visuell identifizieren.
 
-## 2.2 Menüleistenfunktion: System/System management 
+## 2.2 System > System management 
 
-![Menü: System/System management](https://ssv-comm.de/forum/bilder/938-system_2.png) 
+![Menü: System > System management](https://ssv-comm.de/forum/bilder/938-system_2.png) 
 
 Über die hier zusammengefassten Funktionen lassen sich ein Systemneustart (Reboot) erzwingen und die Konfigurationseinstellungen vervielfältigen bzw. in den werksseitigen Ausgangszustand zurücksetzen.
 
@@ -42,17 +42,17 @@ In dieser Webseite des SSV/WebUI sind verschiedenen Eigenschaften zur Gateway-Id
 
 **Configuration reset:** Ermöglicht das Rücksetzen der von Ihnen per SSV/WebUI vorgenommenen Einstellungen in den werkseitig voreingestellten Zustand. Details zur werkseitig voreingestellten IP-Adresse usw. finden Sie im *Handbuch Remote Maintenance Gateway RMG/938 - First Steps*, siehe https://ssv-comm.de/forum/dokumente/RMG938_FS_A.pdf.
 
-## 2.3 Menüleistenfunktion: System/Firmware update 
+## 2.3 System > Firmware update 
 
-![Menü: System/Firmware update](https://ssv-comm.de/forum/bilder/938-system_3.png) 
+![Menü: System > Firmware update](https://ssv-comm.de/forum/bilder/938-system_3.png) 
 
 **Firmware info:** In diesem Bereich werden Ihnen die aktuelle Firmware-Version sowie eine Hash-Wert für Integritätsprüfungen zum installierten Firmware-Image angezeigt. 
 
 **Firmware update configuration:** Ihr Gateway unterstützt verschiedene Remote-Update-Möglichkeiten. Dabei werden einzelne Softwarekomponenten oder sogar eine vollständig neue Firmware von einem vertrauenswürdigen Server heruntergeladen und installiert. Software-Updates sind eine kritische Angelegenheit. Kontaktieren Sie im Zweifelsfall vor einem Update unseren Support.
 
-## 2.4 Menüleistenfunktion: System/App management 
+## 2.4 System > App management 
 
-![Menü: System/App management](https://ssv-comm.de/forum/bilder/938-system_4.png) 
+![Menü: System > App management](https://ssv-comm.de/forum/bilder/938-system_4.png) 
 
 Die Funktionen des Gateways lassen sich über spezielle Apps erweitern. Die meisten Apps stehen Ihnen kostenlos zur Verfügung. Für einige Apps ist eine kostenpflichtige Lizenz erforderlich, die Sie über Ihren Vertriebskontakt erwerben können.
 
@@ -60,17 +60,17 @@ Die Funktionen des Gateways lassen sich über spezielle Apps erweitern. Die meis
 
 **Installed apps:** Hier werden Ihnen die jeweils installierten Apps zusammen mit den jeweiligen Versionsangaben angezeigt. Über die Informations-Schaltfläche lassen sich weitere Informationen zur betreffenden App einblenden. Darüber hinaus können Sie über die Schaltfläche mit dem Mülleimer-Symbol auch bereits installierte Apps jederzeit wieder löschen. 
 
-## 2.5 Menüleistenfunktion: System/Time and date 
+## 2.5 System > Time and date 
 
-![Menü: System/Time and date](https://ssv-comm.de/forum/bilder/938-system_5.png) 
+![Menü: System > Time and date](https://ssv-comm.de/forum/bilder/938-system_5.png) 
 
 **Local time zone configuration:** Hier wird die Zeitzone ausgewählt, in der das Gateway betrieben wird. Die Einstellung ist erforderlich, um bei einer Zeitsynchronisation mit Zeitservern im Internet die erforderliche Korrektur durchzuführen (Korrektur in Bezug auf Greenwich Mean Time, also die mittlere Sonnenzeit am Greenwicher Nullmeridian). 
 
 **Time and date configuration:** An dieser Stelle können Sie auswählen, ob die interne Gateway-Echtzeituhr über einen externen Zeitserver in einem lokalen Netzwerk oder im Internet periodisch synchronisiert wird oder ob eine (einmalige) manuelle Zeitsynchronisation über die SSV/WebUI-Verbindung erfolgen soll. 
 
-## 2.6 Menüleistenfunktion: System/COM ports 
+## 2.6 System > COM ports 
 
-![Menü: System/COM ports](https://ssv-comm.de/forum/bilder/938-system_6.png) 
+![Menü: System > COM ports](https://ssv-comm.de/forum/bilder/938-system_6.png) 
 
 Die seriellen Schnittstellen des Gateways lassen sich für unterschiedliche Anwendungen universell nutzen. Über diese Webseite des SSV/WebUI können Sie einzelne Schnittstellen für den Betrieb als serielle Konsole (Remote console) oder als „Com port redirector“ reservieren. Durch eine solche Reservierung steht die jeweilige Schnittstelle nicht mehr für andere Anwendungen zur Verfügung.
 
@@ -82,9 +82,9 @@ Bitte beachten: Der COM1-Port dieses Gateways befindet sich innerhalb des Gehäu
 
 **Com port redirector:** Diese Funktion bildet einen Protokollkonverter zwischen den IP-basierten Transportprotokollen UDP oder TCP, die z. B. für die LAN-Schnittstellen zur Verfügung stehen, und der jeweils zugewiesenen seriellen Schnittstelle. Die UPD bzw. TCP-Seite kann wahlweise im Client- oder Servermodus betrieben werden. 
 
-## 2.7 Menüleistenfunktion: System/Watchdog 
+## 2.7 System > Watchdog 
 
-![Menü: System/Watchdog](https://ssv-comm.de/forum/bilder/938-system_7.png)
+![Menü: System > Watchdog](https://ssv-comm.de/forum/bilder/938-system_7.png)
 
 Ihr Gateway verfügt über verschiedene Wachdog-Zeitgeber bzw. Watchdog-Zähler, die einen möglichst störungsfreien 24/7-Betrieb gewährleisten sollen. Für diese Watchdogs stellen individuelle Konfigurationseinstellmöglichkeiten zur Verfügung.
 
@@ -112,9 +112,9 @@ Ein Gateway unterhält in vielen Anwendungsfällen gleichzeitig lokale Verbindun
 
 **Mobile: reboot count:** Diese Funktion ist nur für Gateways mit einem internen Mobilfunkmodem vorgesehen.
 
-## 2.8 Menüleistenfunktion: System/Logging 
+## 2.8 System > Logging 
 
-![Menü: System/Logging](https://ssv-comm.de/forum/bilder/938-system_8.png)
+![Menü: System > Logging](https://ssv-comm.de/forum/bilder/938-system_8.png)
 
 Das Gateway erzeugt zur Laufzeit eine Logging-Datei mit umfangreichen Einträgen. Sie dient zur Diagnose bzw. Ursachensuche bei Auffälligkeiten im Systemverhalten und anderen Ereignissen. Die Logging-Datei wird bei jedem Gateway-Bootvorgang neu erzeugt und geht beim Ausschalten der Versorgungsspannung verloren. 
 
@@ -122,9 +122,9 @@ Das Gateway erzeugt zur Laufzeit eine Logging-Datei mit umfangreichen Einträgen
 
 **Download service startup graph:** Über diese Eigenschaft können Sie eine Grafik mit einer Übersicht zum Start einzelner Systemdienste zum PC herunterladen und dort speichern. 
 
-## 3.1 Menüleistenfunktion: Network/WAN 
+## 3.1 Network > WAN 
 
-![Menü: Network/WAN](https://ssv-comm.de/forum/bilder/938-network_1.png)
+![Menü: Network > WAN](https://ssv-comm.de/forum/bilder/938-network_1.png)
 
 Ein Gateway unterhält in vielen Anwendungsfällen gleichzeitig lokale Verbindungen zu anderen Systemen sowie verschiedene externe Verbindungen ins Internet (s. g. WAN-Verbindungen = Wide Area Network-Verbindungen), z. B. zu einem Zeitserver und weiteren speziellen Cloud- und IoT-Serviceplattformen. WAN-Verbindungen sind deutlich störungsanfälliger als lokale Verbindungen. Über die folgende Einstellmöglichkeit lässt sich eine Ping-basierte WAN-Zustandsüberwachung (Ping-Watchdog) konfigurieren, um im Störungsfall eine andere physikalische Gateway-Schnittstelle als WAN-Schnittstelle auszuwählen (*WAN fallback interface*, beispielsweise LAN2 statt LAN1).
 
@@ -132,9 +132,9 @@ Ein Gateway unterhält in vielen Anwendungsfällen gleichzeitig lokale Verbindun
 
 **WAN watchdog:** Hier lässt sich der Ping-Watchdog für die WAN-Schnittstelle aktivieren. Zum Aktivieren muss eine Ping-Test-Intervallzeit ausgewählt werden (z. B. jeweils ein Ping-Test alle 15 Minuten). Des Weiteren ist der DNS-Name oder die IP-Adresse des Systems auszuwählen, dass per Ping-Test über die WAN-Schnittstelle erreicht werden soll. Zusätzlich lässt sich die auszuführende Aktion für den Fehlerfall des Ping-Tests festlegen (siehe *WAN fallback interface*). 
 
-## 3.2 Menüleistenfunktion: Network/LAN1 
+## 3.2 Network > LAN1 
 
-![Menü: Network/LAN1](https://ssv-comm.de/forum/bilder/938-network_2.png)
+![Menü: Network > LAN1](https://ssv-comm.de/forum/bilder/938-network_2.png)
 
 **Interface configuration for LAN1:** Ein- oder ausschalten der LAN1-Schnittstelle.
 
@@ -144,9 +144,9 @@ Ein Gateway unterhält in vielen Anwendungsfällen gleichzeitig lokale Verbindun
 
 **Expert configurations:** Unter diesem Oberbegriff stehen verschieden „Experten-Einstellungen“ zur Verfügung. Veränderungen sollten nur durch entsprechend geschultes Fachpersonal vorgenommen werden. Einen Sonderfall bildet *Enable UPnP discovery* (UPnP = Universal Plug and Play). Ist diese Funktion eingeschaltet, können Sie mit einem UPnP-fähigen Gerät das Gateway in einem lokalen Netzwerk suchen, ohne die IP-Adresse der LAN1-Schnittstelle zu kennen. 
 
-## 3.3 Menüleistenfunktion: Network/LAN2 
+## 3.3 Network > LAN2 
 
-![Menü: Network/LAN2](https://ssv-comm.de/forum/bilder/938-network_3.png)
+![Menü: Network > LAN2](https://ssv-comm.de/forum/bilder/938-network_3.png)
 
 **Interface configuration for LAN2:** Ein- oder ausschalten der LAN2-Schnittstelle.
 
@@ -156,15 +156,15 @@ Ein Gateway unterhält in vielen Anwendungsfällen gleichzeitig lokale Verbindun
 
 **Expert configurations:** Unter diesem Oberbegriff stehen verschieden „Experten-Einstellungen“ zur Verfügung. Veränderungen sollten nur durch entsprechend geschultes Fachpersonal vorgenommen werden. 
 
-## 3.4 Menüleistenfunktion: Network/Bluetooth 
+## 3.4 Network > Bluetooth 
 
-![Menü: Network/Bluetooth](https://ssv-comm.de/forum/bilder/938-network_4.png)
+![Menü: Network > Bluetooth](https://ssv-comm.de/forum/bilder/938-network_4.png)
 
 **General configuration:** Die Bluetooth Low Energy (BLE) Schnittstelle des Gateways lässt sich ein- und ausschalten.
 
-## 3.5 Menüleistenfunktion: Network/Firewall and NAT 
+## 3.5 Network > Firewall and NAT 
 
-![Menü: Network/Firewall and NAT](https://ssv-comm.de/forum/bilder/938-network_5.png)
+![Menü: Network > Firewall and NAT](https://ssv-comm.de/forum/bilder/938-network_5.png)
 
 Ihr Gateway besitzt ein komplexes Firewall-System, mit dem sich der Datenverkehr aller vorhanden IP-Schnittstellen überwachen und filtern lässt. Die Einstellmöglichkeiten sind sehr umfangreich. Wen Sie die Firewall nutzen wollen, ist auf jeden Fall ein entsprechend geschulter Experte für die Einstellungen erforderlich. Alternativ können Sie sich auch jederzeit an unseren Support wenden.
 
@@ -176,18 +176,18 @@ Beachten Sie bitte, dass die Gateway-Firewall sowohl IPv4 als auch PPv6 unterst�
 
 **Formwarding with IP-Masquerading and NAT:** Unter diesem Eintrag lässt sich das NAT-basierte Routing zwischen dem Gateway und dem WAN (Wide Area Network) ein- und ausschalten. 
 
-## 4.1 Menüleistenfunktion: Services/General 
+## 4.1 Services > General 
 
-![Menü: Services/General](https://ssv-comm.de/forum/bilder/938-services_1.png)
+![Menü: Services > General](https://ssv-comm.de/forum/bilder/938-services_1.png)
 
 Ihr Gateway besitzt aus Kompatibilitätsgründen mit älteren SSV-Produkten sowohl einen Telnet- als auch FTP-Server. Beide Protokolle gelten inzwischen als unsicher, weil sie auf einer unverschlüsselten Datenübertragung basieren. Insofern sollten diese Protokolle für den Praxiseinsatz des Gateways ausgeschaltet werden.
 
 **General service configuration:** Hier können Sie den Zugriff per Telnet oder FTP auf das Gateway ein- oder ausschalten. Des Weiteren lässt sich der *Shellinabox*-Service aktivieren bzw. deaktivieren. *Shellinabox* (Shell-in-a-box) ist eine per Webbrowser aufrufbare Webseite, in der Sie über eine Linux-Konsole mit dem Gateway kommunizieren können.    
 
-## 4.2 Menüleistenfunktion: Services/OpenVPN 
+## 4.2 Services > OpenVPN 
 
-![Menü: Services/OpenVPN](https://ssv-comm.de/forum/bilder/938-services_2a.png)
-![Menü: Services/OpenVPN](https://ssv-comm.de/forum/bilder/938-services_2b.png)
+![Menü: Services > OpenVPN](https://ssv-comm.de/forum/bilder/938-services_2a.png)
+![Menü: Services > OpenVPN](https://ssv-comm.de/forum/bilder/938-services_2b.png)
 
 Ein typisches Anwendungsbeispiel für industrielle Gateways ist der Einsatz in Virtual Private Networks (VPNs), um Fernwartungsanwendungen zu realisieren. Das Gateway bildet dabei einen VPN-Client-Endpunkt und ermöglicht einem Servicetechniker den sicheren Fernzugriff auf die hinter dem Gateway liegenden Baugruppen (z. B. Steuerungen in einem lokalen OT-LAN). In einer solchen Anwendung verbinden sich alle VPN-Clients mit einem zentralen VPN-Server. Ihr Gateway kann gleichzeitig die Verbindungen zu maximal drei externen VPN-Servern aufrechthalten halten (siehe Reiter *Client 1*, *Client 2* und *Client 3*). Jede Verbindung lässt sich mit unterschiedlichen Zertifikaten einzeln konfigurieren. Darüber hinaus ist das Gateway auch als VPN-Server einsetzbar (siehe Reiter *Server*).
 
@@ -195,9 +195,9 @@ Ein typisches Anwendungsbeispiel für industrielle Gateways ist der Einsatz in V
 
 **OpenVPN certificates and keys:** In diesem Bereich erfolgt das Zertifikats- und Schlüsselmanagement für eine VPN-Client-Verbindung, um sich mit dem jeweiligen OpenVPN-Server verbinden zu können.
 
-## 4.3 Menüleistenfunktion: Services/DynDNS 
+## 4.3 Services > DynDNS 
 
-![Menü: Services/DynDNS](https://ssv-comm.de/forum/bilder/938-services_3.png)
+![Menü: Services > DynDNS](https://ssv-comm.de/forum/bilder/938-services_3.png)
 
 Ihr Gateway ermöglicht Anwendungen, in denen es selbst über einen DNS-Namen im Internet erreichbar sein muss. Ein Beispiel wäre der Betrieb als VPN-Server. Da ein solches Gateway in der Regel keine statische IP-Adresse im Internet erhält, lässt sich alternativ DynDNS nutzen.
 
@@ -209,9 +209,9 @@ DynDNS oder auch DDNS sind Abkürzungen für dynamisches DNS. Dahinter verbirgt 
 
 **Notification to webserver after IP address changes:** Ein- und ausschalten eines Benachrichtigungsdienstes für den Fall, dass sich die IP-Adresse des Gateways im Internet verändert hat.
 
-## 4.4 Menüleistenfunktion: Services/DHCP Server 
+## 4.4 Services > DHCP Server 
 
-![Menü: Services/DHCP Server](https://ssv-comm.de/forum/bilder/938-services_4.png)
+![Menü: Services > DHCP Server](https://ssv-comm.de/forum/bilder/938-services_4.png)
 
 Das Gateway unterstützt die automatische IP-Adressvergabe per Dynamic Host Configuration Protocol (DHCP) an OT-Baugruppen (DHCP-Client-Baugruppen), die mit einer Gateway-LAN-Schnittstelle verbunden sind. Mit anderen Worten: Das Gateway lässt sich als DHCP-Server nutzen.
 
@@ -219,25 +219,25 @@ Das Gateway unterstützt die automatische IP-Adressvergabe per Dynamic Host Conf
 
 **Address range:** Festlegen des IP-Adressbereichs, aus dem IP-Adressen per DHCP an die Client-Baugruppen vergeben werden. 
 
-## 4.5 Menüleistenfunktion: Services/SNMP 
+## 4.5 Services > SNMP 
 
-![Menü: Services/SNMP](https://ssv-comm.de/forum/bilder/938-services_5.png)
+![Menü: Services > SNMP](https://ssv-comm.de/forum/bilder/938-services_5.png)
 
 Das Simple Network Management Protocol (SNMP) ist ein Netzwerkprotokoll, das von der IETF entwickelt wurde, um Gateways und andere Netzwerkbaugruppen von einem zentralen Managementsystem aus zu überwachen und bestimme Parameter verändern zu können. Das Protokoll regelt dabei die Kommunikation zwischen den überwachten Baugruppen und dem Managementsystem
 
 **SNMP configuration:** Ein- und ausschalten des SNMP-Betriebs. Auswahl der SNMP-Version sowie weiterer Parameter.
 
-## 4.6 Menüleistenfunktion: Services/Remote Access 
+## 4.6 Services > Remote Access 
 
-![Menü: Services/Remote Access](https://ssv-comm.de/forum/bilder/938-services_6.png)
+![Menü: Services > Remote Access](https://ssv-comm.de/forum/bilder/938-services_6.png)
 
 **OpenSSH configuration:** Es wird ein SSH-basierter Administratorenzugriff auf das Gateway unterstützt (SSH Secure Shell). Dafür läuft innerhalb des Gateway-Betriebssystems ein OpenSSH-Daemon (SSHD). Hier lässt sich der SSHD ein- und ausschalten sowie konfigurieren. Des Weiteren wird der aktuelle *RSA key fingerprint* angezeigt.  
 
 **Change passwort for user "root":** Der SSH-Zugriff auf das Gateway erfolgt grundsätzlich mit Administratorenrechten (User „root“). Das Passwort für diesen Benutzer lässt sich hier ändern. 
 
-## 4.7 Menüleistenfunktion: Services/WebUI 
+## 4.7 Services > WebUI 
 
-![Menü: Services/WebUI](https://ssv-comm.de/forum/bilder/938-services_7.png)
+![Menü: Services > WebUI](https://ssv-comm.de/forum/bilder/938-services_7.png)
 
 Das SSV/WebUI Ihres Gateways unterstützt zwei unterschiedliche Benutzerklassen: 1) einen Administrator (*admin*) mit allen Rechten und 2) einen Benutzer (*user*) mit eingeschränkten Rechten, dem auch nur eine einstellbare Selektivansicht des SSV/WebUI präsentiert wird.
 
@@ -247,9 +247,9 @@ Das SSV/WebUI Ihres Gateways unterstützt zwei unterschiedliche Benutzerklassen:
 
 **Change user access acount:** Festlegen bzw. verändern des Benutzernamen und Passwort für den WebUI-Zugriff mit eingeschränkten Benutzerrechten (*user*).
 
-## 5.1 Menüleistenfunktion: Proxies/Web 
+## 5.1 Proxies > Web 
 
-![Menü: Proxies/Web](https://ssv-comm.de/forum/bilder/938-proxies_1.png)
+![Menü: Proxies > Web](https://ssv-comm.de/forum/bilder/938-proxies_1.png)
 
 Wenn in den Automatisierungsbaugruppen eines OT-Netzwerks HTTP-Server existieren, lässt sich über die Web-Proxy-Funktion Ihres Gateways die IT-Sicherheit für den Zugriff auf diese Server steigern. Dazu wird für jeden HTTP-Server jeweils ein Web-Proxy konfiguriert, der das unsichere HTTP-Protokoll in das sichere HTTPS-Protokoll umwandelt. Es entsteht also ein HTTP-to-HTTPS-Proxy. Anschließend erfolgt der Browserzugriff eines externen Nutzers nicht mehr direkt auf den HTTP-Server in der Automatisierungsbaugruppe, sondern per HTTPS auf den Proxy im Gateway.  
 
@@ -261,17 +261,17 @@ Wenn in den Automatisierungsbaugruppen eines OT-Netzwerks HTTP-Server existieren
 
 **SSL certificate:** für den HTTP-to-HTTPS-Proxy wird ein Zertikat benötigt. Dieses Zertifikat lässt sich hier erstellen.
 
-## 5.2 Menüleistenfunktion: Proxies/DNS 
+## 5.2 Proxies > DNS 
 
-![Menü: Proxies/DNS](https://ssv-comm.de/forum/bilder/938-proxies_2.png)
+![Menü: Proxies > DNS](https://ssv-comm.de/forum/bilder/938-proxies_2.png)
 
 Ein DNS-Proxy leitet DNS-Anforderungen (DNS-Request) und DNS-Antworten (DNS-Response) zwischen DNS-Clients und einem DNS-Server weiter. Der DNS-Proxy vereinfacht das Netzwerkmanagement. Wenn sich z. B. die DNS-Serveradresse ändert, ist nur eine veränderte Konfiguration für den DNS-Proxy erforderlich, nicht aber für jeden einzelnen DNS-Client.
 
 **General configuration:** Hier können Sie den DNS-Proxy-Service ein- und ausschalten.
 
-## 5.3 Menüleistenfunktion: Proxies/FTP 
+## 5.3 Proxies > FTP 
 
-![Menü: Proxies/FTP](https://ssv-comm.de/forum/bilder/938-proxies_3.png)
+![Menü: Proxies > FTP](https://ssv-comm.de/forum/bilder/938-proxies_3.png)
 
 Wenn in den Automatisierungsbaugruppen eines OT-Netzwerks FTP-Server existieren, lässt sich über die FTP-Proxy-Funktion Ihres Gateways der Zugriff auf diese Server auf andere TCP-Ports umleiten.
 
@@ -281,9 +281,9 @@ Wenn in den Automatisierungsbaugruppen eines OT-Netzwerks FTP-Server existieren,
 
 **Create / edit a redirection entry:** Unter dieser Überschrift wird eine neue FTP-Proxy-Verbindung erzeugt. Dafür sind jeweils die folgenden Eingaben erforderlich: 1.) die TCP-Portnummer für den *Listen on port*. 2.) Die IP-Adresse und die Portnummer für den *Relay to*-Part.
 
-## 5.4 Menüleistenfunktion: Proxies/TCP 
+## 5.4 Proxies > TCP 
 
-![Menü: Proxies/TCP](https://ssv-comm.de/forum/bilder/938-proxies_4.png)
+![Menü: Proxies > TCP](https://ssv-comm.de/forum/bilder/938-proxies_4.png)
 
 Ein TCP-Proxy erzeugt einen TCP-Socket unter einer vorgegebenen TCP-Portnummer (*Listen on port* socket) und erzeugt eine bidirektionale Datenverbindung zwischen diesem Socket und einem weiteren einstellbaren TCP-Socket (*Relay to* socket), der sich auf dem gleichen Gateway oder einem externen Rechnersystem mit einer statischen IP-Adresse befinden kann.
 
@@ -293,9 +293,9 @@ Ein TCP-Proxy erzeugt einen TCP-Socket unter einer vorgegebenen TCP-Portnummer (
 
 **Create / edit a redirection entry:** Unter dieser Überschrift wird eine neue TCP-Proxy-Socket-Verbindung erzeugt. Dafür sind jeweils die folgenden Eingaben erforderlich: 1.) die TCP-Portnummer für den *Listen on port*. 2.) Die IP-Adresse und die Portnummer für den *Relay to*-Part.
 
-## 5.5 Menüleistenfunktion: Proxies/UDP 
+## 5.5 Proxies > UDP 
 
-![Menü: Proxies/UDP](https://ssv-comm.de/forum/bilder/938-proxies_5.png)
+![Menü: Proxies > UDP](https://ssv-comm.de/forum/bilder/938-proxies_5.png)
 
 Ein UDP-Proxy erzeugt einen UDP-Socket unter einer vorgegebenen UPD-Portnummer (*Listen on port* socket) und erzeugt eine bidirektionale Datenverbindung zwischen diesem Socket und einem weiteren einstellbaren UDP-Socket (*Relay to* socket), der sich auf dem gleichen Gateway oder einem externen Rechnersystem mit einer statischen IP-Adresse befinden kann.
 
@@ -305,14 +305,12 @@ Ein UDP-Proxy erzeugt einen UDP-Socket unter einer vorgegebenen UPD-Portnummer (
 
 **Create / edit a redirection entry:** Unter dieser Überschrift wird eine neue UDP-Proxy-Socket-Verbindung erzeugt. Dafür sind jeweils die folgenden Eingaben erforderlich: 1.) die UDP-Portnummer für den *Listen on port*. 2.) Die IP-Adresse und die Portnummer für den *Relay to*-Part.
 
-## 6.1 Menüleistenfunktion: Apps/Node-RED 
+## 6.1 Apps > Node-RED 
 
-![Menü: Apps/Node-RED](https://ssv-comm.de/forum/bilder/938-apps_1.png)
+![Menü: Apps > Node-RED](https://ssv-comm.de/forum/bilder/938-apps_1.png)
 
 Einige nachträglich installierbare Gateway-Apps erzeugen unter der Menüleistenfunktion *Apps* eigene Einträge, um dem Benutzer eine Konfigurations-Webseite zur Verfügung zu stellen. Die hier dargestellte Abbildung zeigt als Beispiel die Konfigurationsseite der Node-RED-App. 
 
 **General configuration:** Die Node-RED lässt sich ein- und ausschalten. Ist Node-RED eingeschaltet, läuft die Software dauerhaft als Prozess im Linux-Betriebssystem des Gateways und wird auch bei jedem Bootvorgang automatisch gestartet. Alle unter Node-RED erzeugten Flows werden automatisch zur Ausführung gebracht. Darüber hinaus lassen sich die auf einem Gateway unter Node-RED erzeugten Flow hier in eine Datei auf dem PC exportieren und auf einem anderem Gateway wieder importieren. Zusätzlich kann für den Speicherbereich mit den Node-RED-Flow ein manueller *Cleanup* erzeugt werden (Löschen aller Flow-Komponenten).
 
 **Access protection:** Node-RED besitzt eine Web-basierte Oberfläche, die ein weiteres Browserfenster benötigt. Der Zugriff auf die Node-RED-Oberfläche lässt sich über eine Benutzeranmeldung mit Benutzername/Passwort schützen. Der Benutzername und das Passwort lassen sich hier einstellen. Des Weiteren kann der Webbrowser entweder über eine ungesicherte HTTP- oder eine geschützte HTTPS-Verbindung auf die Node-RED-Oberfläche zugreifen. Auch diese Eigenschaft ist hier einstellbar. 
-
-*readme-rmg938.md / Vers. 0.2 / 26.Sept.2022 / (c) SSV Software Systems 2022*
