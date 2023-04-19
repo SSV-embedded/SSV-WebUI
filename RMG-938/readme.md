@@ -1,20 +1,20 @@
 # SSV/WebUI Function: RMG/938
 
-Before the first commissioning, please make sure to read the manual *Remote Maintenance Gateway RMG/938 - First Steps* (Link: https://ssv-embedded.de/doks/manuals/fs_rmg938_en.pdf). In the manual, under *Accessing the SSV/WebUI*, you will find a description of how to access the SSV/WebUI from your PC via web browser and log in as administrator in this web-based configuration interface.
+Before the first commissioning, please make sure to read the manual [Remote Maintenance Gateway RMG/938 - First Steps](https://ssv-embedded.de/doks/manuals/fs_rmg938_en.pdf) (PDF). In the manual, under **Accessing the SSV/WebUI**, you will find a description of how to access the SSV/WebUI from your PC via web browser and log in as administrator in this web-based configuration interface.
 
 After a successful login, a horizontal menu bar with the available functions will be displayed in the browser window.
 
-![Übersicht: Menü](https://ssv-comm.de/forum/bilder/938-menue.png)
+![Übersicht: Menü](https://ssv-embedded.de/bilder/github/938-menue.png)
 
 ## 1. Status 
 
-![Menü: Status](https://ssv-comm.de/forum/bilder/938-status.png) 
+![Menü: Status](https://ssv-embedded.de/bilder/github/938-status.png) 
 
 Overview page with the current system status and the addresses of all IP interfaces plus additional information about DNS servers and the default gateway.
 
 ## 2.1 System > System identification 
 
-![Menü: System > System identification](https://ssv-comm.de/forum/bilder/938-system_1.png) 
+![Menü: System > System identification](https://ssv-embedded.de/bilder/github/938-system_1.png) 
 
 This web page of the SSV/WebUI summarizes various properties for gateway identification.
 
@@ -30,7 +30,7 @@ This web page of the SSV/WebUI summarizes various properties for gateway identif
 
 ## 2.2 System > System management 
 
-![Menü: System > System management](https://ssv-comm.de/forum/bilder/938-system_2.png) 
+![Menü: System > System management](https://ssv-embedded.de/bilder/github/938-system_2.png) 
 
 The functions summarized here can be used to force a system restart (reboot) and to duplicate the configuration settings or reset them to the factory default state.
 
@@ -40,11 +40,11 @@ The functions summarized here can be used to force a system restart (reboot) and
 
 **Configuration upload:** A configuration settings file saved on the PC can be uploaded to the gateway to apply the settings from the file. ***Caution: This action will cause your gateway settings to be lost. They will be overwritten by the uploaded file. This may lock you out of the SSV/WebUI for further access.***
 
-**Configuration reset:** Allows you to reset the settings you made via SSV/WebUI to the factory default state. For details on the factory default IP address, etc., refer to the *Remote Maintenance Gateway RMG/938 - First Steps* manual (https://ssv-comm.de/forum/dokumente/RMG938_FS_A.pdf).
+**Configuration reset:** Allows you to reset the settings you made via SSV/WebUI to the factory default state. For details on the factory default IP address, etc., refer to the [Remote Maintenance Gateway RMG/938 - First Steps](https://ssv-embedded.de/doks/manuals/fs_rmg938_en.pdf) (PDF).
 
 ## 2.3 System > Firmware update 
 
-![Menü: System > Firmware update](https://ssv-comm.de/forum/bilder/938-system_3.png) 
+![Menü: System > Firmware update](https://ssv-embedded.de/bilder/github/938-system_3.png) 
 
 **Firmware info:** This area shows you the current firmware version and a hash value for integrity checks on the installed firmware image. 
 
@@ -52,7 +52,7 @@ The functions summarized here can be used to force a system restart (reboot) and
 
 ## 2.4 System > App management 
 
-![Menü: System > App management](https://ssv-comm.de/forum/bilder/938-system_4.png) 
+![Menü: System > App management](https://ssv-embedded.de/bilder/github/938-system_4.png) 
 
 The functions of the gateway can be extended via special apps. Most apps are available fo free. Some apps require a paid license, which you can purchase through your sales contact.
 
@@ -62,7 +62,7 @@ The functions of the gateway can be extended via special apps. Most apps are ava
 
 ## 2.5 System > Time and date 
 
-![Menü: System > Time and date](https://ssv-comm.de/forum/bilder/938-system_5.png) 
+![Menü: System > Time and date](https://ssv-embedded.de/bilder/github/938-system_5.png) 
 
 **Local time zone configuration:** The time zone in which the gateway is operated is selected here. The setting is required in order to carry out the necessary correction during a time synchronization with time servers on the Internet (correction with respect to Greenwich Mean Time, i.e. the mean solar time at the Greenwich prime meridian). 
 
@@ -70,7 +70,7 @@ The functions of the gateway can be extended via special apps. Most apps are ava
 
 ## 2.6 System > COM ports 
 
-![Menü: System > COM ports](https://ssv-comm.de/forum/bilder/938-system_6.png) 
+![Menü: System > COM ports](https://ssv-embedded.de/bilder/github/938-system_6.png) 
 
 The serial interfaces of the gateway can be used universally for different applications. Via this web page of the SSV/WebUI, you can reserve individual interfaces for operation as a serial console (remote console) or as a "Com port redirector". By such a reservation the respective interface is no longer available for other applications.
 
@@ -84,7 +84,7 @@ Please note: The COM1 port of this gateway is located inside the housing. It is 
 
 ## 2.7 System > Watchdog 
 
-![Menü: System > Watchdog](https://ssv-comm.de/forum/bilder/938-system_7.png)
+![Menü: System > Watchdog](https://ssv-embedded.de/bilder/github/938-system_7.png)
 
 Your gateway has various watchdog timers or watchdog counters that are intended to ensure the most trouble-free 24/7 operation possible. Individual configuration setting options are available for these watchdogs.
 
@@ -114,7 +114,7 @@ In many use cases, a gateway simultaneously maintains local connections to other
 
 ## 2.8 System > Logging 
 
-![Menü: System > Logging](https://ssv-comm.de/forum/bilder/938-system_8.png)
+![Menü: System > Logging](https://ssv-embedded.de/bilder/github/938-system_8.png)
 
 The gateway generates a logging file with extensive entries at runtime. It is used for diagnostics and for finding the cause of striking system behavior and other events. The logging file is regenerated with every gateway boot process and is lost when the supply voltage is switched off.
 
@@ -124,7 +124,7 @@ The gateway generates a logging file with extensive entries at runtime. It is us
 
 ## 3.1 Network > WAN 
 
-![Menü: Network > WAN](https://ssv-comm.de/forum/bilder/938-network_1.png)
+![Menü: Network > WAN](https://ssv-embedded.de/bilder/github/938-network_1.png)
 
 In many use cases, a gateway simultaneously maintains local connections to other systems as well as various external connections to the Internet (so-called WAN connections = Wide Area Network connections), e.g., to a time server and other special cloud and IoT service platforms. WAN connections are much more susceptible to disturbances than local connections. The following setting option can be used to configure ping-based WAN status monitoring (ping watchdog) in order to select a different physical gateway interface as the WAN interface in the event of a disturbance (WAN fallback interface, for example LAN2 instead of LAN1).
 
@@ -134,7 +134,7 @@ In many use cases, a gateway simultaneously maintains local connections to other
 
 ## 3.2 Network > LAN1 
 
-![Menü: Network > LAN1](https://ssv-comm.de/forum/bilder/938-network_2.png)
+![Menü: Network > LAN1](https://ssv-embedded.de/bilder/github/938-network_2.png)
 
 **Interface configuration for LAN1:** Enable or disable the LAN1 interface.
 
@@ -146,7 +146,7 @@ In many use cases, a gateway simultaneously maintains local connections to other
 
 ## 3.3 Network > LAN2 
 
-![Menü: Network > LAN2](https://ssv-comm.de/forum/bilder/938-network_3.png)
+![Menü: Network > LAN2](https://ssv-embedded.de/bilder/github/938-network_3.png)
 
 **Interface configuration for LAN2:** Enable or disable the LAN2 interface.
 
@@ -158,13 +158,13 @@ In many use cases, a gateway simultaneously maintains local connections to other
 
 ## 3.4 Network > Bluetooth 
 
-![Menü: Network > Bluetooth](https://ssv-comm.de/forum/bilder/938-network_4.png)
+![Menü: Network > Bluetooth](https://ssv-embedded.de/bilder/github/938-network_4.png)
 
 **General configuration:** The Bluetooth Low Energy (BLE) interface of the gateway can be switched on and off.
 
 ## 3.5 Network > Firewall and NAT 
 
-![Menü: Network > Firewall and NAT](https://ssv-comm.de/forum/bilder/938-network_5.png)
+![Menü: Network > Firewall and NAT](https://ssv-embedded.de/bilder/github/938-network_5.png)
 
 Your gateway has a complex firewall system that can be used to monitor and filter the data traffic of all existing IP interfaces. The setting options are very extensive. If you want to use the firewall, an appropriately trained expert is definitely required for the settings. You can alternatively contact our support at any time.
 
@@ -178,7 +178,7 @@ Please note that the gateway firewall supports both IPv4 and IPv6. However, both
 
 ## 4.1 Services > General 
 
-![Menü: Services > General](https://ssv-comm.de/forum/bilder/938-services_1.png)
+![Menü: Services > General](https://ssv-embedded.de/bilder/github/938-services_1.png)
 
 Your gateway has both a Telnet and FTP server for compatibility with older SSV products. Both protocols are now considered insecure because they are based on unencrypted data transmission. In this respect, these protocols should be switched off for practical use of the gateway.
 
@@ -186,8 +186,8 @@ Your gateway has both a Telnet and FTP server for compatibility with older SSV p
 
 ## 4.2 Services > OpenVPN 
 
-![Menü: Services > OpenVPN](https://ssv-comm.de/forum/bilder/938-services_2a.png)
-![Menü: Services > OpenVPN](https://ssv-comm.de/forum/bilder/938-services_2b.png)
+![Menü: Services > OpenVPN](https://ssv-embedded.de/bilder/github/938-services_2a.png)
+![Menü: Services > OpenVPN](https://ssv-embedded.de/bilder/github/938-services_2b.png)
 
 A typical application example for industrial gateways is their use in virtual private networks (VPNs) to implement remote maintenance applications. Here, the gateway forms a VPN client endpoint and enables a service engineer to securely remotely access the assemblies located behind the gateway (e.g., controllers in a local OT LAN). In such an application, all VPN clients connect to a central VPN server. Your gateway can simultaneously maintain connections to a maximum of three external VPN servers (see tabs *Client 1*, *Client 2* and *Client 3)*. Each connection can be configured individually with different certificates. In addition, the gateway can also be used as a VPN server (see *Server* tab).
 
@@ -197,7 +197,7 @@ A typical application example for industrial gateways is their use in virtual pr
 
 ## 4.3 Services > DynDNS 
 
-![Menü: Services > DynDNS](https://ssv-comm.de/forum/bilder/938-services_3.png)
+![Menü: Services > DynDNS](https://ssv-embedded.de/bilder/github/938-services_3.png)
 
 Your gateway enables applications in which it must itself be accessible via a DNS name on the Internet. One example would be operation as a VPN server. As such a gateway usually does not receive a static IP address on the Internet, DynDNS can be used as an alternative.
 
@@ -211,7 +211,7 @@ DynDNS or DDNS are abbreviations for dynamic DNS. This is a technique for dynami
 
 ## 4.4 Services > DHCP Server 
 
-![Menü: Services > DHCP Server](https://ssv-comm.de/forum/bilder/938-services_4.png)
+![Menü: Services > DHCP Server](https://ssv-embedded.de/bilder/github/938-services_4.png)
 
 The gateway supports automatic IP address assignment via Dynamic Host Configuration Protocol (DHCP) to OT modules (DHCP client modules) that are connected to a gateway LAN interface. In other words, the gateway can be used as a DHCP server.
 
@@ -221,7 +221,7 @@ The gateway supports automatic IP address assignment via Dynamic Host Configurat
 
 ## 4.5 Services > SNMP 
 
-![Menü: Services > SNMP](https://ssv-comm.de/forum/bilder/938-services_5.png)
+![Menü: Services > SNMP](https://ssv-embedded.de/bilder/github/938-services_5.png)
 
 The Simple Network Management Protocol (SNMP) is a network protocol developed by the IETF to monitor gateways and other network modules from a central management system and to change certain parameters. The protocol manages the communication between the monitored modules and the management system.
 
@@ -229,7 +229,7 @@ The Simple Network Management Protocol (SNMP) is a network protocol developed by
 
 ## 4.6 Services > Remote Access 
 
-![Menü: Services > Remote Access](https://ssv-comm.de/forum/bilder/938-services_6.png)
+![Menü: Services > Remote Access](https://ssv-embedded.de/bilder/github/938-services_6.png)
 
 **OpenSSH configuration:** SSH-based administrator access to the gateway is supported (SSH Secure Shell). An OpenSSH daemon (SSHD) runs within the gateway operating system for this purpose. The SSHD can be enabled, disabled and configured here. Furthermore, the current RSA key fingerprint is displayed.  
 
@@ -237,7 +237,7 @@ The Simple Network Management Protocol (SNMP) is a network protocol developed by
 
 ## 4.7 Services > WebUI 
 
-![Menü: Services > WebUI](https://ssv-comm.de/forum/bilder/938-services_7.png)
+![Menü: Services > WebUI](https://ssv-embedded.de/bilder/github/938-services_7.png)
 
 The SSV/WebUI of your gateway supports two different user classes: 1) an administrator (*admin*) with all rights and 2) a user (*user*) with restricted rights, who is also only presented with an adjustable selective view of the SSV/WebUI.
 
@@ -249,7 +249,7 @@ The SSV/WebUI of your gateway supports two different user classes: 1) an adminis
 
 ## 5.1 Proxies > Web 
 
-![Menü: Proxies > Web](https://ssv-comm.de/forum/bilder/938-proxies_1.png)
+![Menü: Proxies > Web](https://ssv-embedded.de/bilder/github/938-proxies_1.png)
 
 If HTTP servers exist in the automation modules of an OT network, the web proxy function of your gateway can be used to increase IT security for access to these servers. For this purpose, a web proxy is configured for each HTTP server, which converts the insecure HTTP protocol into the secure HTTPS protocol. This creates an HTTP-to-HTTPS proxy. Subsequently, browser access by an external user no longer takes place directly to the HTTP server in the automation module, but via HTTPS to the proxy in the gateway.
 
@@ -263,7 +263,7 @@ If HTTP servers exist in the automation modules of an OT network, the web proxy 
 
 ## 5.2 Proxies > DNS 
 
-![Menü: Proxies > DNS](https://ssv-comm.de/forum/bilder/938-proxies_2.png)
+![Menü: Proxies > DNS](https://ssv-embedded.de/bilder/github/938-proxies_2.png)
 
 A DNS proxy routes DNS requests (DNS request) and DNS responses (DNS response) between DNS clients and a DNS server. The DNS proxy simplifies network management. For example, if the DNS server address changes, only a change in configuration is required for the DNS proxy, not for each individual DNS client.
 
@@ -271,7 +271,7 @@ A DNS proxy routes DNS requests (DNS request) and DNS responses (DNS response) b
 
 ## 5.3 Proxies > FTP 
 
-![Menü: Proxies > FTP](https://ssv-comm.de/forum/bilder/938-proxies_3.png)
+![Menü: Proxies > FTP](https://ssv-embedded.de/bilder/github/938-proxies_3.png)
 
 If FTP servers exist in the automation systems of an OT network, the FTP proxy function of your gateway can be used to redirect access to these servers to other TCP ports.
 
@@ -283,7 +283,7 @@ If FTP servers exist in the automation systems of an OT network, the FTP proxy f
 
 ## 5.4 Proxies > TCP 
 
-![Menü: Proxies > TCP](https://ssv-comm.de/forum/bilder/938-proxies_4.png)
+![Menü: Proxies > TCP](https://ssv-embedded.de/bilder/github/938-proxies_4.png)
 
 A TCP proxy creates a TCP socket under a specified TCP port number (*Listen on port* socket) and creates a bidirectional data connection between this socket and another adjustable TCP socket (*Relay to* socket), which can be located on the same gateway or an external computer system with a static IP address.
 
@@ -295,7 +295,7 @@ A TCP proxy creates a TCP socket under a specified TCP port number (*Listen on p
 
 ## 5.5 Proxies > UDP 
 
-![Menü: Proxies > UDP](https://ssv-comm.de/forum/bilder/938-proxies_5.png)
+![Menü: Proxies > UDP](https://ssv-embedded.de/bilder/github/938-proxies_5.png)
 
 A UDP proxy creates a UDP socket under a specified UPD port number (Listen on port socket) and creates a bidirectional data connection between this socket and another adjustable UDP socket (Relay to socket), which can be located on the same gateway or an external computer system with a static IP address.
 
@@ -307,7 +307,7 @@ A UDP proxy creates a UDP socket under a specified UPD port number (Listen on po
 
 ## 6.1 Apps > Node-RED 
 
-![Menü: Apps > Node-RED](https://ssv-comm.de/forum/bilder/938-apps_1.png)
+![Menü: Apps > Node-RED](https://ssv-embedded.de/bilder/github/938-apps_1.png)
 
 Some subsequently installable gateway apps create their own entries in the menu bar function *Apps* in order to provide the user with a configuration web page. The figure shown here illustrates the configuration page of the Node-RED app as an example.
  
