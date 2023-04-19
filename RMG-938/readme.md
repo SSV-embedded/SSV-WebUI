@@ -1,8 +1,8 @@
-# SSV/WebUI-Funktionen: RMG/938
+# SSV/WebUI Function: RMG/938
 
-Vor der ersten Inbetriebnahme bitte unbedingt das Handbuch **[Remote Maintenance Gateway RMG/938 - First Steps](https://ssv-embedded.de/doks/manuals/fs_rmg938_en.pdf)** durchsehen. In dem Handbuch finden Sie unter **Accessing the SSV/WebUI** eine Beschreibung wie Sie von Ihrem PC aus per Webbrowser auf das SSV/WebUI zugreifen und sich als Administrator in dieser Web-basierten Konfigurationsoberfläche anmelden können.  
+Before the first commissioning, please make sure to read the manual *Remote Maintenance Gateway RMG/938 - First Steps* (Link: https://ssv-embedded.de/doks/manuals/fs_rmg938_en.pdf). In the manual, under *Accessing the SSV/WebUI*, you will find a description of how to access the SSV/WebUI from your PC via web browser and log in as administrator in this web-based configuration interface.
 
-Nach einer erfolgreichen Anmeldung wird Ihnen im Browserfenster eine horizontale Menüleiste mit den zur Verfügung stehenden Funktionen angezeigt.  
+After a successful login, a horizontal menu bar with the available functions will be displayed in the browser window.
 
 ![Übersicht: Menü](https://ssv-comm.de/forum/bilder/938-menue.png)
 
@@ -10,309 +10,308 @@ Nach einer erfolgreichen Anmeldung wird Ihnen im Browserfenster eine horizontale
 
 ![Menü: Status](https://ssv-comm.de/forum/bilder/938-status.png) 
 
-Übersichtsseite mit dem aktuellen Systemstatus sowie den Adressen aller IP-Schnittstellen plus Zusatzinformationen zu DNS-Servern und dem Default-Gateway.
+Overview page with the current system status and the addresses of all IP interfaces plus additional information about DNS servers and the default gateway.
 
 ## 2.1 System > System identification 
 
 ![Menü: System > System identification](https://ssv-comm.de/forum/bilder/938-system_1.png) 
 
-In dieser Webseite des SSV/WebUI sind verschiedene Eigenschaften zur Gateway-Identifikation zusammengefasst.
+This web page of the SSV/WebUI summarizes various properties for gateway identification.
 
-**Host name:** Eingabe eines beliebigen Namens, um ein bestimmtes Gateway sicher identifizieren zu können.
+**Host name:** Input of an arbitrary name to be able to identify a certain gateway reliably.
 
-**Location:** Eingabe der Standortinformationen bzw. Angaben, um den Installationsort eines bestimmten Gateways zu finden.
+**Location:** Enter the location information or details to find the installation location of a specific gateway.
 
-**Contact:** E-Mail-Adresseingabe, um den zuständigen Betreuer des Gateways erreichen zu können. 
+**Contact:** E-mail address input to be able to reach the responsible person in charge of the gateway.
 
-**Serial number:** Voreingestellte Seriennummer des Gateways. Über diese Nummer lassen sich Rückfragen zur Produktionswoche, Werkseinstellungen, Auslieferung usw. mit Hilfe der Herstellerdatenbank beantworten.
+**Serial number:** Preset serial number of the gateway. This number can be used to answer queries about the production week, factory settings, delivery, etc. with the help of the manufacturer database.
 
-**Identify device through front LED:** Ein Druck auf die Flash-Schaltfläche bewirkt, dass eine der Frontplatten-LEDs des Gateways ca. 5 Sekunden lang blinkt. Dadurch lässt sich ein bestimmtes Gateway visuell identifizieren.
+**Identify device through front LED:** Pressing the flash button causes one of the gateway's front panel LEDs to flash for approx. 5 seconds. This allows a specific gateway to be visually identified.
 
 ## 2.2 System > System management 
 
 ![Menü: System > System management](https://ssv-comm.de/forum/bilder/938-system_2.png) 
 
-Über die hier zusammengefassten Funktionen lassen sich ein Systemneustart (Reboot) erzwingen und die Konfigurationseinstellungen vervielfältigen bzw. in den werksseitigen Ausgangszustand zurücksetzen.
+The functions summarized here can be used to force a system restart (reboot) and to duplicate the configuration settings or reset them to the factory default state.
 
-**Reboot system:** Das Betriebssystem des Gateways wird heruntergefahren. Anschließend erfolgt ein Neustart. Die WebUI-Sitzung muss anschließend neu gestartet werden. Durch diese Aktion gehen unter Umständen nicht gespeicherte Einstellungen verloren.
+**Reboot system:** The gateway's operating system is shut down. This is followed by a reboot. The WebUI session must then be restarted. This action may cause the loss of unsaved settings.
 
-**Configuration download:** Die auf diesem Gateway per Web/UI eingestellte Konfiguration kann mit dieser Funktion als Datei zum PC heruntergeladen und gespeichert werden.
+**Configuration download:** The configuration set on this gateway via Web/UI can be downloaded as a file to the PC and saved using this function.
 
-**Configuration upload:** Eine auf dem PC gespeicherte Datei mit Konfigurationseinstellungen kann zum Gateway hochgeladen werden, um die Einstellungen aus der Datei zu übernehmen.
+**Configuration upload:** A configuration settings file saved on the PC can be uploaded to the gateway to apply the settings from the file. ***Caution: This action will cause your gateway settings to be lost. They will be overwritten by the uploaded file. This may lock you out of the SSV/WebUI for further access.***
 
-> **Achtung: Durch diese Aktion gehen Ihre Gateway-Einstellungen verloren. Sie werden durch die hochgeladene Datei überschrieben. Dadurch können Sie sich für weitere Zugriffe aus dem SSV/WebUI aussperren.**
-
-**Configuration reset:** Ermöglicht das Rücksetzen der von Ihnen per SSV/WebUI vorgenommenen Einstellungen in den werkseitig voreingestellten Zustand. Details zur werkseitig voreingestellten IP-Adresse usw. finden Sie im Handbuch **[Remote Maintenance Gateway RMG/938 - First Steps](https://ssv-embedded.de/doks/manuals/fs_rmg938_en.pdf)**.
+**Configuration reset:** Allows you to reset the settings you made via SSV/WebUI to the factory default state. For details on the factory default IP address, etc., refer to the *Remote Maintenance Gateway RMG/938 - First Steps* manual (https://ssv-comm.de/forum/dokumente/RMG938_FS_A.pdf).
 
 ## 2.3 System > Firmware update 
 
 ![Menü: System > Firmware update](https://ssv-comm.de/forum/bilder/938-system_3.png) 
 
-**Firmware info:** In diesem Bereich werden Ihnen die aktuelle Firmware-Version sowie ein Hash-Wert für Integritätsprüfungen zum installierten Firmware-Image angezeigt. 
+**Firmware info:** This area shows you the current firmware version and a hash value for integrity checks on the installed firmware image. 
 
-**Firmware update configuration:** Ihr Gateway unterstützt verschiedene Remote-Update-Möglichkeiten. Dabei werden einzelne Softwarekomponenten oder sogar eine vollständig neue Firmware von einem vertrauenswürdigen Server heruntergeladen und installiert. Software-Updates sind eine kritische Angelegenheit. Kontaktieren Sie im Zweifelsfall vor einem Update unseren Support.
+**Firmware update configuration:** Your gateway supports various remote update options. This involves downloading and installing individual software components or even a completely new firmware image from a trusted server. Software updates are a critical matter. In case of doubt, contact our support before performing an update.
 
 ## 2.4 System > App management 
 
 ![Menü: System > App management](https://ssv-comm.de/forum/bilder/938-system_4.png) 
 
-Die Funktionen des Gateways lassen sich über spezielle Apps erweitern. Die meisten Apps stehen Ihnen kostenlos zur Verfügung. Für einige Apps ist eine kostenpflichtige Lizenz erforderlich, die Sie über Ihren Vertriebskontakt erwerben können.
+The functions of the gateway can be extended via special apps. Most apps are available fo free. Some apps require a paid license, which you can purchase through your sales contact.
 
-**Install app:** Diese Funktion liefert Ihnen eine aktuelle Übersicht der für dieses Gateway zur Verfügung stehenden Apps plus die jeweiligen Versionsnummern. Die Übersicht entsteht durch einen Online-Zugriff auf einen externen Server. Diese Funktion erfordert daher eine Internetverbindung des Gateways. Über die Schaltfläche am rechten Rand der jeweiligen Zeile können Sie die gewünschte App installieren.
+**Install app:** This function provides you with an up-to-date overview of the apps available for this gateway plus the respective version numbers. The overview is generated by an online access to an external server. This function therefore requires an Internet connection of the gateway. You can install the desired app via the button on the right edge of the respective line.
 
-**Installed apps:** Hier werden Ihnen die jeweils installierten Apps zusammen mit den jeweiligen Versionsangaben angezeigt. Über die Informations-Schaltfläche lassen sich weitere Informationen zur betreffenden App einblenden. Darüber hinaus können Sie über die Schaltfläche mit dem Mülleimer-Symbol auch bereits installierte Apps jederzeit wieder löschen. 
+**Installed apps:** Here, the respective installed apps are displayed together with the respective version information. The information button can be used to display further information on the regarding app. You can also delete apps that have already been installed at any time using the button with the trash can icon.
 
 ## 2.5 System > Time and date 
 
 ![Menü: System > Time and date](https://ssv-comm.de/forum/bilder/938-system_5.png) 
 
-**Local time zone configuration:** Hier wird die Zeitzone ausgewählt, in der das Gateway betrieben wird. Die Einstellung ist erforderlich, um bei einer Zeitsynchronisation mit Zeitservern im Internet die erforderliche Korrektur durchzuführen (Korrektur in Bezug auf Greenwich Mean Time, also die mittlere Sonnenzeit am Greenwicher Nullmeridian). 
+**Local time zone configuration:** The time zone in which the gateway is operated is selected here. The setting is required in order to carry out the necessary correction during a time synchronization with time servers on the Internet (correction with respect to Greenwich Mean Time, i.e. the mean solar time at the Greenwich prime meridian). 
 
-**Time and date configuration:** An dieser Stelle können Sie auswählen, ob die interne Gateway-Echtzeituhr über einen externen Zeitserver in einem lokalen Netzwerk oder im Internet periodisch synchronisiert wird oder ob eine (einmalige) manuelle Zeitsynchronisation über die SSV/WebUI-Verbindung erfolgen soll. 
+**Time and date configuration:** At this point you can select whether the internal gateway real-time clock is synchronized periodically via an external time server in a local network or on the Internet or whether a (one-time) manual time synchronization is to be performed via the SSV/WebUI connection.  
 
 ## 2.6 System > COM ports 
 
 ![Menü: System > COM ports](https://ssv-comm.de/forum/bilder/938-system_6.png) 
 
-Die seriellen Schnittstellen des Gateways lassen sich für unterschiedliche Anwendungen universell nutzen. Über diese Webseite des SSV/WebUI können Sie einzelne Schnittstellen für den Betrieb als serielle Konsole (Remote console) oder als „Com port redirector“ reservieren. Durch eine solche Reservierung steht die jeweilige Schnittstelle nicht mehr für andere Anwendungen zur Verfügung.
+The serial interfaces of the gateway can be used universally for different applications. Via this web page of the SSV/WebUI, you can reserve individual interfaces for operation as a serial console (remote console) or as a "Com port redirector". By such a reservation the respective interface is no longer available for other applications.
 
-Bitte beachten: Der COM1-Port dieses Gateways befindet sich innerhalb des Gehäuses. Er ist von außen nicht zugänglich. Diese Schnittstelle ist fix als serielle Konsole für Servicezwecke vorgesehen. Eine andere Verwendung ist nicht möglich. Für die weiteren Schnittstellen gibt es drei Optionen:
+Please note: The COM1 port of this gateway is located inside the housing. It is not accessible from the outside. This interface is fixed as a serial console for service purposes. Any other use is not possible. There are three options for the other interfaces:
 
-**None:** Die serielle Schnittstelle kann durch beliebige Anwendungen genutzt werden, z. B. unter Node-RED für die Modbus-basierte Kommunikation mit externen Baugruppen. 
+**None:** The serial interface can be used by any application, e.g. by Node-RED for Modbus-based communication with external modules. 
 
-**Remote console:** Die jeweilige serielle Schnittstelle bildet eine Konsole für die Kommunikation mit dem Linux-Betriebssystem. Beachten Sie bitte, dass für die Benutzung eine Anmeldung mit Benutzername und Passwort erforderlich ist.
+**Remote console:** The respective serial port forms a console for communication with the Linux operating system. Please note that a login with user name and password is required for the use.
 
-**Com port redirector:** Diese Funktion bildet einen Protokollkonverter zwischen den IP-basierten Transportprotokollen UDP oder TCP, die z. B. für die LAN-Schnittstellen zur Verfügung stehen, und der jeweils zugewiesenen seriellen Schnittstelle. Die UPD bzw. TCP-Seite kann wahlweise im Client- oder Servermodus betrieben werden. 
+**Com port redirector:** This function forms a protocol converter between the IP-based transport protocols UDP or TCP, which are available e.g. for the LAN interfaces, and the respective assigned serial port. The UPD or TCP side can optionally be operated in client or server mode. 
 
 ## 2.7 System > Watchdog 
 
 ![Menü: System > Watchdog](https://ssv-comm.de/forum/bilder/938-system_7.png)
 
-Ihr Gateway verfügt über verschiedene Wachdog-Zeitgeber bzw. Watchdog-Zähler, die einen möglichst störungsfreien 24/7-Betrieb gewährleisten sollen. Für diese Watchdogs stehen individuelle Konfigurationseinstellmöglichkeiten zur Verfügung.
+Your gateway has various watchdog timers or watchdog counters that are intended to ensure the most trouble-free 24/7 operation possible. Individual configuration setting options are available for these watchdogs.
 
-**Enable watchdog service:** Watchdog-Dienste des Gateways ein- oder ausschalten.
+**Enable watchdog service:** Enable or disable watchdog services of the gateway.
 
-**Enable default watchdog:** Die hier aufgeführten einzelnen Watchdogs mit den werksseitigen Default-Einstellungen aktivieren.
+**Enable default watchdog:** Activate the individual watchdogs listed here with the factory default settings.
 
-**Reboot interval:** Einstellen einer Zeitspanne, nach der automatisch ein Reboot des Gateways ausgelöst wird. Durch den Gateway-Reboot werden alle Systemprozesse in einen (definierten) Ausgangszustand gesetzt.  
+**Reboot interval:** Set a time interval after which a gateway reboot is automatically triggered. The gateway reboot sets all system processes to a (defined) initial state.  
 
-Ein typischer Anwendungsfall für dieses Gateway ist der Betrieb als VPN-Client in einer Fernwartungsanwendung. Dafür ist es je nach Konfiguration wichtig, dass eine dauerhafte VPN-Verbindung zu einem externen VPN-Server existiert. Wird diese VPN-Verbindung durch irgendwelche Störungen unterbrochen, muss das Gateway automatisch versuchen, den Server erneut zu erreichen. Mit den folgenden beiden Einstellmöglichkeiten lässt sich ein Gateway-Reboot erzeugen, wenn innerhalb einer bestimmten Zeit keine VPN-Serververbindung zu Stande gekommen ist oder eine bestimmte Zeit lang keine VPN-Verbindung mehr existiert.
+A typical use case for this gateway is operation as a VPN client in a remote maintenance application. For this, depending on the configuration, it is important that a permanent VPN connection to an external VPN server exists. If this VPN connection is interrupted by any malfunctions, the gateway must automatically try to reach the server again. The following two setting options can be used to generate a gateway reboot if no VPN server connection is established within a certain time or if no VPN connection exists for a certain time.
 
-**VPN1: Start delay:** Überwachen, ob innerhalb einer bestimmten Zeit eine VPN-Verbindung zu Stande kommt. Das Gateway kann nach jedem Bootvorgang automatisch einen VPN-Server kontaktieren, um sich als Client in ein VPN zu integrieren. Klappt diese Integration nicht innerhalb der hier festgelegten Zeit, wird ein Gateway-Reboot erzeugt.
+**VPN1: Start delay:** Monitoring whether a VPN connection is established within a certain time. The gateway can automatically contact a VPN server after each boot process in order to integrate itself as a client in a VPN. If this integration does not work within the time specified here, a gateway reboot is generated.
 
-**VPN1: Offline delay:** Überwachen, wie lange bereits keine VPN-Verbindung zu einem externen Server existiert. Wurde eine VPN-Verbindung zum Server unterbrochen und ist keine neue Verbindung zu Stande gekommen, wird nach Ablauf der hier voreingestellt Zeit ein Reboot erzeugt.
+**VPN1: Offline delay:** Monitoring how long no VPN connection to an external server has existed. If a VPN connection to the server has been interrupted and no new connection has been established, a reboot is generated after the time preset here has elapsed.
 
-Ein Gateway unterhält in vielen Anwendungsfällen gleichzeitig lokale Verbindungen zu anderen Systemen sowie verschiedene externe Verbindungen ins Internet  (s. g. WAN-Verbindungen = Wide Area Network-Verbindungen), z. B. zu einem Zeitserver und weiteren speziellen Cloud- und IoT-Serviceplattformen. WAN-Verbindungen sind deutlich störungsanfälliger als eine lokale Verbindung. Über die folgenden drei Einstellmöglichkeiten lässt sich eine Datenmengen-basierte WAN-Zustandsüberwachung konfigurieren, um im Störungsfall einen automatischen Restart der WAN-Schnittstellen-Hardware auszulösen (beispielsweise ein Reset für das interne Mobilfunkmodem).
+In many use cases, a gateway simultaneously maintains local connections to other systems as well as various external connections to the Internet (so-called WAN connections = Wide Area Network connections), e.g., to a time server and other special cloud and IoT service platforms. WAN connections are much more vulnerable to interference than a local connection. The following three setting options can be used to configure data volume-based WAN condition monitoring to trigger an automatic restart of the WAN interface hardware In case of malfunction (for example, a reset for the internal cellular modem).
 
-**WAN: Traffic threshold:** Anzahl der Bytes pro Minute, die mindestens aus dem WAN in Richtung Gateway übertragen werden müssen, wenn eine funktionierende WAN-Verbindung existiert. Dieser Schwellwert legt fest, ob die WAN-Verbindung als OK oder kritisch (unbestimmt) eingestuft wird. (Achtung: Diese Funktion ist nur für Gateways mit einem internen Mobilfunkmodem sinnvoll nutzbar)
+**WAN: Traffic threshold:** Number of bytes per minute that must at least be transferred from the WAN in the direction of the gateway if a functioning WAN connection exists. This threshold determines whether the WAN connection is classified as OK or critical (undetermined). (Attention: This function is only useful for gateways with an internal cellular modem)
 
-**WAN: Start delay:** Zeitspanne, innerhalb welcher nach einem Gateway-Bootvorgang die per Schwellwert (siehe *Traffic threshold*) festgelegte Anzahl Bytes pro Minute erreicht werden muss. Ansonsten wird nach Ablauf der hier voreingestellten Zeit ein WAN-Schnittstellen-Hardware-Restart erzeugt. (Achtung: Diese Funktion ist nur für Gateways mit einem internen Mobilfunkmodem sinnvoll nutzbar).
+**WAN: Start delay:** Time period within which the number of bytes per minute specified by the threshold value (see Traffic threshold) must be reached after a gateway boot process. Otherwise a WAN interface hardware restart is generated after the time preset here has elapsed. (Attention: This function is only useful for gateways with an internal mobile modem)
 
-**WAN: Idle delay:** Zeitspanne, die maximal vergehen darf, ohne dass die per Schwellwert (siehe *Traffic threshold*) festgelegte Anzahl Bytes pro Minute erreicht werden muss. Ansonsten wird nach Ablauf der hier voreingestellten Zeit ein WAN-Schnittstellen-Hardware-Restart erzeugt. (Achtung: Diese Funktion ist nur für Gateways mit einem internen Mobilfunkmodem sinnvoll nutzbar).
+**WAN: Idle delay:** Maximum time that may elapse without reaching the number of bytes per minute specified by the threshold (see Traffic threshold). Otherwise a WAN interface hardware restart is generated after the time preset here has elapsed. (Attention: This function is only useful for gateways with an internal mobile modem)
 
-**Mobile: reset count:** Diese Funktion ist nur für Gateways mit einem internen Mobilfunkmodem vorgesehen.
+**Mobile: reset count:** This function is only for gateways with an internal cellular modem.
 
-**Mobile: reboot count:** Diese Funktion ist nur für Gateways mit einem internen Mobilfunkmodem vorgesehen.
+**Mobile: reboot count:** This function is only intended for gateways with an internal cellular modem.
 
 ## 2.8 System > Logging 
 
 ![Menü: System > Logging](https://ssv-comm.de/forum/bilder/938-system_8.png)
 
-Das Gateway erzeugt zur Laufzeit eine Logging-Datei mit umfangreichen Einträgen. Sie dient zur Diagnose bzw. Ursachensuche bei Auffälligkeiten im Systemverhalten und anderen Ereignissen. Die Logging-Datei wird bei jedem Gateway-Bootvorgang neu erzeugt und geht beim Ausschalten der Versorgungsspannung verloren. 
+The gateway generates a logging file with extensive entries at runtime. It is used for diagnostics and for finding the cause of striking system behavior and other events. The logging file is regenerated with every gateway boot process and is lost when the supply voltage is switched off.
 
-**Download log file:** Mit dieser Funktion können Sie die Logging-Datei zu Ihrem PC herunterladen und dort speichern.
+**Download log file:** This function allows you to download the logging file to your PC and save it there.
 
-**Download service startup graph:** Über diese Eigenschaft können Sie eine Grafik mit einer Übersicht zum Start einzelner Systemdienste zum PC herunterladen und dort speichern. 
+**Download service startup graph:** Using this feature you can download a graph with an overview of the startup of individual system services to the PC and save it there. 
 
 ## 3.1 Network > WAN 
 
 ![Menü: Network > WAN](https://ssv-comm.de/forum/bilder/938-network_1.png)
 
-Ein Gateway unterhält in vielen Anwendungsfällen gleichzeitig lokale Verbindungen zu anderen Systemen sowie verschiedene externe Verbindungen ins Internet (s. g. WAN-Verbindungen = Wide Area Network-Verbindungen), z. B. zu einem Zeitserver und weiteren speziellen Cloud- und IoT-Serviceplattformen. WAN-Verbindungen sind deutlich störungsanfälliger als lokale Verbindungen. Über die folgende Einstellmöglichkeit lässt sich eine Ping-basierte WAN-Zustandsüberwachung (Ping-Watchdog) konfigurieren, um im Störungsfall eine andere physikalische Gateway-Schnittstelle als WAN-Schnittstelle auszuwählen (*WAN fallback interface*, beispielsweise LAN2 statt LAN1).
+In many use cases, a gateway simultaneously maintains local connections to other systems as well as various external connections to the Internet (so-called WAN connections = Wide Area Network connections), e.g., to a time server and other special cloud and IoT service platforms. WAN connections are much more susceptible to disturbances than local connections. The following setting option can be used to configure ping-based WAN status monitoring (ping watchdog) in order to select a different physical gateway interface as the WAN interface in the event of a disturbance (WAN fallback interface, for example LAN2 instead of LAN1).
 
-**WAN configuration:** Auswahl einer Gateway-Schnittstelle für die WAN-Verbindung (es können nur IP-fähige Schnittstellen ausgewählt werden, z. B. LAN1).
+**WAN configuration:** Selection of a gateway interface for the WAN connection (only IP-capable interfaces can be selected, e.g. LAN1).
 
-**WAN watchdog:** Hier lässt sich der Ping-Watchdog für die WAN-Schnittstelle aktivieren. Zum Aktivieren muss eine Ping-Test-Intervallzeit ausgewählt werden (z. B. jeweils ein Ping-Test alle 15 Minuten). Des Weiteren ist der DNS-Name oder die IP-Adresse des Systems auszuwählen, das per Ping-Test über die WAN-Schnittstelle erreicht werden soll. Zusätzlich lässt sich die auszuführende Aktion für den Fehlerfall des Ping-Tests festlegen (siehe *WAN fallback interface*). 
+**WAN watchdog:** Here the ping watchdog for the WAN interface can be activated. To activate it, a ping test interval time must be selected (e.g. one ping test every 15 minutes). Furthermore, the DNS name or the IP address of the system that is to be reached via the WAN interface by ping test must be selected. In addition, the action to be performed in the event of an error in the ping test can be defined (see *WAN fallback interface*).
 
 ## 3.2 Network > LAN1 
 
 ![Menü: Network > LAN1](https://ssv-comm.de/forum/bilder/938-network_2.png)
 
-**Interface configuration for LAN1:** Ein- oder ausschalten der LAN1-Schnittstelle.
+**Interface configuration for LAN1:** Enable or disable the LAN1 interface.
 
-**IPv4 address configuration:** In dieser Gruppe sind die IPv4- Adresseinstellmöglichkeiten für die LAN1-Schnittstelle zusammengefasst. Sie können zwischen einer automatischen IP-Adressvergabe per DHCP oder der manuellen Adresseingabe wählen. Beachten Sie bitte, dass der LAN1-Schnittstelle mehr als eine IP-Adresse zugewiesen werden kann. 
+**IPv4 address configuration:** This group contains the IPv4 address setting options for the LAN1 interface. You can choose between automatic IP address assignment via DHCP or manual address entry. Please note that more than one IP address can be assigned to the LAN1 interface. 
 
-**IPv6 address configuration:** Hier sind IPv6-Adresseinstellmöglichkeiten für die LAN1-Schnittstelle zusammengefasst. Analog zur IPv4-Adressvergabe ist eine automatische Adresszuweisung per DHCP oder die manuelle Adresseingabe von IPv6-Adressen möglich.
+**IPv6 address configuration:** IPv6 address setting options for the LAN1 interface are summarized here. Analogous to IPv4 address assignment, automatic address assignment via DHCP or manual address entry of IPv6 addresses is possible.
 
-**Expert configurations:** Unter diesem Oberbegriff stehen verschiedene „Experten-Einstellungen“ zur Verfügung. Veränderungen sollten nur durch entsprechend geschultes Fachpersonal vorgenommen werden. Einen Sonderfall bildet *Enable UPnP discovery* (UPnP = Universal Plug and Play). Ist diese Funktion eingeschaltet, können Sie mit einem UPnP-fähigen Gerät das Gateway in einem lokalen Netzwerk suchen, ohne die IP-Adresse der LAN1-Schnittstelle zu kennen. 
+**Expert configurations:** Various "expert settings" are available under this generic term. Changes should only be made by appropriately trained specialist personnel. Enable UPnP discovery (UPnP = Universal Plug and Play) is a special case. If this function is enabled, you can search for the gateway in a local network with a UPnP-capable device without knowing the IP address of the LAN1 interface. 
 
 ## 3.3 Network > LAN2 
 
 ![Menü: Network > LAN2](https://ssv-comm.de/forum/bilder/938-network_3.png)
 
-**Interface configuration for LAN2:** Ein- oder ausschalten der LAN2-Schnittstelle.
+**Interface configuration for LAN2:** Enable or disable the LAN2 interface.
 
-**IPv4 address configuration:** In dieser Gruppe sind die IPv4-Adresseinstellmöglichkeiten für die LAN2-Schnittstelle zusammengefasst. Sie können zwischen einer automatischen IP-Adressvergabe per DHCP oder der manuellen Adresseingabe wählen. Beachten Sie bitte, dass der LAN2-Schnittstelle mehr als eine IP-Adresse zugewiesen werden kann.  
+**IPv4 address configuration:** This group contains the IPv4 address setting options for the LAN2 interface. You can choose between automatic IP address assignment via DHCP or manual address entry. Please note that more than one IP address can be assigned to the LAN2 interface.  
 
-**IPv6 address configuration:** Hier sind IPv6-Adresseinstellmöglichkeiten für die LAN2-Schnittstelle zusammengefasst. Analog zur IPv4-Adressvergabe ist eine automatische Adresszuweisung per DHCP oder die manuelle Adresseingabe von IPv6-Adressen möglich.
+**IPv6 address configuration:** IPv6 address setting options for the LAN2 interface are summarized here. Analogous to IPv4 address assignment, automatic address assignment via DHCP or manual address entry of IPv6 addresses is possible.
 
-**Expert configurations:** Unter diesem Oberbegriff stehen verschiedene „Experten-Einstellungen“ zur Verfügung. Veränderungen sollten nur durch entsprechend geschultes Fachpersonal vorgenommen werden. 
+**Expert configurations:** Various "expert settings" are available under this generic heading. Changes should only be made by appropriately trained specialists. 
 
 ## 3.4 Network > Bluetooth 
 
 ![Menü: Network > Bluetooth](https://ssv-comm.de/forum/bilder/938-network_4.png)
 
-**General configuration:** Die Bluetooth Low Energy (BLE) Schnittstelle des Gateways lässt sich ein- und ausschalten.
+**General configuration:** The Bluetooth Low Energy (BLE) interface of the gateway can be switched on and off.
 
 ## 3.5 Network > Firewall and NAT 
 
 ![Menü: Network > Firewall and NAT](https://ssv-comm.de/forum/bilder/938-network_5.png)
 
-Ihr Gateway besitzt ein komplexes Firewall-System, mit dem sich der Datenverkehr aller vorhandenen IP-Schnittstellen überwachen und filtern lässt. Die Einstellmöglichkeiten sind sehr umfangreich. Wenn Sie die Firewall nutzen wollen, ist auf jeden Fall ein entsprechend geschulter Experte für die Einstellungen erforderlich. Alternativ können Sie sich auch jederzeit an unseren Support wenden.
+Your gateway has a complex firewall system that can be used to monitor and filter the data traffic of all existing IP interfaces. The setting options are very extensive. If you want to use the firewall, an appropriately trained expert is definitely required for the settings. You can alternatively contact our support at any time.
 
-Beachten Sie bitte, dass die Gateway-Firewall sowohl IPv4 als auch IPv6 unterstützt. Für beide IP-Protokollvarianten sind aber in jedem Fall jeweils eigene Regeln erforderlich.
+Please note that the gateway firewall supports both IPv4 and IPv6. However, both IP protocol variants require their own rules in each case.
 
-**Firewall configuration:** In diesem Bereich können Sie sich die aktuellen Firewall-Regeln anzeigen lassen und eine Log-Datei für Firewall-Diagnoseaufgaben ein- bzw. ausschalten und ansehen. 
+**Firewall configuration:** In this section you can display the current firewall rules and enable/disable and view a log file for firewall diagnostic tasks. 
 
-**Firewall and NAT rules preconfigured sets:** Das Gateway besitzt einige vordefinierte Firewall-Regeln, z. B. für Anwendungen in einem Fernzugriffs-VPN. Diese Voreinstellungen lassen sich hier aktivieren bzw. an eigene Anforderungen anpassen. Des Weiteren ist unter diesen Einstellmöglichkeiten auch das Hochladen einer Datei mit vollständigen Firewall- und NAT-Regeln möglich vom PC zum Gateway (Upload eines *Firewall and NAT rules script*).  
+**Firewall and NAT rules preconfigured sets:** The gateway has some predefined firewall rules, e.g. for applications in a remote access VPN. These preconfigured sets can be activated here or adapted to your own requirements. Furthermore, under these setting options it is also possible to upload a file with complete firewall and NAT rules from the computer to the gateway (upload of a *firewall and NAT rules script*).
 
-**Formwarding with IP-Masquerading and NAT:** Unter diesem Eintrag lässt sich das NAT-basierte Routing zwischen dem Gateway und dem WAN (Wide Area Network) ein- und ausschalten. 
+**Forwarding with IP-Masquerading and NAT:** Under this entry, NAT-based routing between the gateway and the WAN (Wide Area Network) can be switched on and off. 
 
 ## 4.1 Services > General 
 
 ![Menü: Services > General](https://ssv-comm.de/forum/bilder/938-services_1.png)
 
-Ihr Gateway besitzt aus Kompatibilitätsgründen mit älteren SSV-Produkten sowohl einen Telnet- als auch FTP-Server. Beide Protokolle gelten inzwischen als unsicher, weil sie auf einer unverschlüsselten Datenübertragung basieren. Insofern sollten diese Protokolle für den Praxiseinsatz des Gateways ausgeschaltet werden.
+Your gateway has both a Telnet and FTP server for compatibility with older SSV products. Both protocols are now considered insecure because they are based on unencrypted data transmission. In this respect, these protocols should be switched off for practical use of the gateway.
 
-**General service configuration:** Hier können Sie den Zugriff per Telnet oder FTP auf das Gateway ein- oder ausschalten. Des Weiteren lässt sich der *Shellinabox*-Service aktivieren bzw. deaktivieren. *Shellinabox* (Shell-in-a-box) ist eine per Webbrowser aufrufbare Webseite, in der Sie über eine Linux-Konsole mit dem Gateway kommunizieren können.    
+**General service configuration:** Here you can enable or disable access to the gateway via Telnet or FTP. Furthermore, the Shellinabox service can be enabled or disabled. Shellinabox (Shell-in-a-box) is a web page that can be accessed via a web browser, in which you can communicate with the gateway via a Linux console.    
 
 ## 4.2 Services > OpenVPN 
 
 ![Menü: Services > OpenVPN](https://ssv-comm.de/forum/bilder/938-services_2a.png)
 ![Menü: Services > OpenVPN](https://ssv-comm.de/forum/bilder/938-services_2b.png)
 
-Ein typisches Anwendungsbeispiel für industrielle Gateways ist der Einsatz in Virtual Private Networks (VPNs), um Fernwartungsanwendungen zu realisieren. Das Gateway bildet dabei einen VPN-Client-Endpunkt und ermöglicht einem Servicetechniker den sicheren Fernzugriff auf die hinter dem Gateway liegenden Baugruppen (z. B. Steuerungen in einem lokalen OT-LAN). In einer solchen Anwendung verbinden sich alle VPN-Clients mit einem zentralen VPN-Server. Ihr Gateway kann gleichzeitig die Verbindungen zu maximal drei externen VPN-Servern aufrechthalten (siehe Reiter *Client 1*, *Client 2* und *Client 3*). Jede Verbindung lässt sich mit unterschiedlichen Zertifikaten einzeln konfigurieren. Darüber hinaus ist das Gateway auch als VPN-Server einsetzbar (siehe Reiter *Server*).
+A typical application example for industrial gateways is their use in virtual private networks (VPNs) to implement remote maintenance applications. Here, the gateway forms a VPN client endpoint and enables a service engineer to securely remotely access the assemblies located behind the gateway (e.g., controllers in a local OT LAN). In such an application, all VPN clients connect to a central VPN server. Your gateway can simultaneously maintain connections to a maximum of three external VPN servers (see tabs *Client 1*, *Client 2* and *Client 3)*. Each connection can be configured individually with different certificates. In addition, the gateway can also be used as a VPN server (see *Server* tab).
 
-**OpenVPN client configuration:** Für jede Client-Verbindung zu einem externen OpenVPN-Server lassen sich hier neben der OpenVPN-Server-IP-Adresse bzw. dem OpenVPN-Server-DNS-Namen unterschiedliche Protokollparameter einstellen. Diese Konfigurationen müssen durch einen entsprechend geschulten Experten erfolgen. Alternativ können Sie sich auch an unseren Support wenden. 
+**OpenVPN client configuration:** For each client connection to an external OpenVPN server, different protocol parameters can be set here in addition to the OpenVPN server IP address or the OpenVPN server DNS name. These configurations have to be done by an appropriately trained expert. Alternatively, you can also contact our support. 
 
-**OpenVPN certificates and keys:** In diesem Bereich erfolgt das Zertifikats- und Schlüsselmanagement für eine VPN-Client-Verbindung, um sich mit dem jeweiligen OpenVPN-Server verbinden zu können.
+**OpenVPN certificates and keys:** In this area, the certificate and key management for a VPN client connection takes place in order to be able to connect to the respective OpenVPN server.
 
 ## 4.3 Services > DynDNS 
 
 ![Menü: Services > DynDNS](https://ssv-comm.de/forum/bilder/938-services_3.png)
 
-Ihr Gateway ermöglicht Anwendungen, in denen es selbst über einen DNS-Namen im Internet erreichbar sein muss. Ein Beispiel wäre der Betrieb als VPN-Server. Da ein solches Gateway in der Regel keine statische IP-Adresse im Internet erhält, lässt sich alternativ DynDNS nutzen.
+Your gateway enables applications in which it must itself be accessible via a DNS name on the Internet. One example would be operation as a VPN server. As such a gateway usually does not receive a static IP address on the Internet, DynDNS can be used as an alternative.
 
-DynDNS oder auch DDNS sind Abkürzungen für dynamisches DNS. Dahinter verbirgt sich eine Technik, um die IP-Adressen einzelner Services im Domain Name System (DNS) dynamisch zu aktualisieren. Der Zweck ist, dass ein Rechnersystem mit einem global erreichbaren Service nach dem Wechsel seiner IP-Adresse automatisch und schnell den dazugehörigen Eintrag im DNS ändert.
+DynDNS or DDNS are abbreviations for dynamic DNS. This is a technique for dynamically updating the IP addresses of individual services in the Domain Name System (DNS). The purpose is that a computer system with a globally accessible service automatically and quickly changes the corresponding entry in the DNS after changing its IP address.
 
-**DynDNS configuration:** Ein- und ausschalten des DynDNS-Service-Updates. Auswahl des DynDNS-Providers, bei dem ein entsprechender Account existiert, sowie des vollständigen Host-Namens (FQDN = Fully-Qualified Domain Name, also ein vollständiger Domain-Name). Des Weiteren lässt sich die Update-Periode einstellen.
+**DynDNS configuration:** Switching the DynDNS service update on and off. Selection of the DynDNS provider with which a corresponding account exists and the complete host name (FQDN = Fully-Qualified Domain Name). Furthermore, the update period can be set.
 
-**Change DynDNS username and password:** Unter dieser Überschrift lässt sich ein neues Passwort für einen Benutzernamen festlegen.
+**Change DynDNS username and password:** Under this heading a new password for a user name can be set.
 
-**Notification to webserver after IP address changes:** Ein- und ausschalten eines Benachrichtigungsdienstes für den Fall, dass sich die IP-Adresse des Gateways im Internet verändert hat.
+**Notification to webserver after IP address changes:** Enable and disable a notification service in case the IP address of the gateway has changed on the Internet.
 
 ## 4.4 Services > DHCP Server 
 
 ![Menü: Services > DHCP Server](https://ssv-comm.de/forum/bilder/938-services_4.png)
 
-Das Gateway unterstützt die automatische IP-Adressvergabe per Dynamic Host Configuration Protocol (DHCP) an OT-Baugruppen (DHCP-Client-Baugruppen), die mit einer Gateway-LAN-Schnittstelle verbunden sind. Mit anderen Worten: Das Gateway lässt sich als DHCP-Server nutzen.
+The gateway supports automatic IP address assignment via Dynamic Host Configuration Protocol (DHCP) to OT modules (DHCP client modules) that are connected to a gateway LAN interface. In other words, the gateway can be used as a DHCP server.
 
-**Genral configuration:** Ein- und ausschalten des DHCP-Serverbetriebs.
+**General configuration:** Switching DHCP server operation on and off.
 
-**Address range:** Festlegen des IP-Adressbereichs, aus dem IP-Adressen per DHCP an die Client-Baugruppen vergeben werden. 
+**Address range:** Specify the IP address range from which IP addresses are assigned to the client modules via DHCP. 
 
 ## 4.5 Services > SNMP 
 
 ![Menü: Services > SNMP](https://ssv-comm.de/forum/bilder/938-services_5.png)
 
-Das Simple Network Management Protocol (SNMP) ist ein Netzwerkprotokoll, das von der IETF entwickelt wurde, um Gateways und andere Netzwerkbaugruppen von einem zentralen Managementsystem aus zu überwachen und bestimmte Parameter verändern zu können. Das Protokoll regelt dabei die Kommunikation zwischen den überwachten Baugruppen und dem Managementsystem.
+The Simple Network Management Protocol (SNMP) is a network protocol developed by the IETF to monitor gateways and other network modules from a central management system and to change certain parameters. The protocol manages the communication between the monitored modules and the management system.
 
-**SNMP configuration:** Ein- und ausschalten des SNMP-Betriebs. Auswahl der SNMP-Version sowie weiterer Parameter.
+**SNMP configuration:** Switching SNMP operation on and off. Selection of the SNMP version and other parameters.
 
 ## 4.6 Services > Remote Access 
 
 ![Menü: Services > Remote Access](https://ssv-comm.de/forum/bilder/938-services_6.png)
 
-**OpenSSH configuration:** Es wird ein SSH-basierter Administratorenzugriff auf das Gateway unterstützt (SSH Secure Shell). Dafür läuft innerhalb des Gateway-Betriebssystems ein OpenSSH-Daemon (SSHD). Hier lässt sich der SSHD ein- und ausschalten sowie konfigurieren. Des Weiteren wird der aktuelle *RSA key fingerprint* angezeigt.  
+**OpenSSH configuration:** SSH-based administrator access to the gateway is supported (SSH Secure Shell). An OpenSSH daemon (SSHD) runs within the gateway operating system for this purpose. The SSHD can be enabled, disabled and configured here. Furthermore, the current RSA key fingerprint is displayed.  
 
-**Change passwort for user "root":** Der SSH-Zugriff auf das Gateway erfolgt grundsätzlich mit Administratorenrechten (User „root“). Das Passwort für diesen Benutzer lässt sich hier ändern. 
+**Change passwort for user "root":** SSH access to the gateway is always performed with administrator rights (user "root"). The password for this user can be changed here. 
 
 ## 4.7 Services > WebUI 
 
 ![Menü: Services > WebUI](https://ssv-comm.de/forum/bilder/938-services_7.png)
 
-Das SSV/WebUI Ihres Gateways unterstützt zwei unterschiedliche Benutzerklassen: 1) einen Administrator (*admin*) mit allen Rechten und 2) einen Benutzer (*user*) mit eingeschränkten Rechten, dem auch nur eine einstellbare Selektivansicht des SSV/WebUI präsentiert wird.
+The SSV/WebUI of your gateway supports two different user classes: 1) an administrator (*admin*) with all rights and 2) a user (*user*) with restricted rights, who is also only presented with an adjustable selective view of the SSV/WebUI.
 
-**SSV/WebUI configuration:** In diesem Bereich lässt sich das gesamte WebUI ausschalten. Des Weiteren sind verschiedene Konfigurationseinstellungen möglich; z. B. die Wahl zwischen dem ungeschützten HTTP- oder dem sicheren HTTPS-Protokoll, die Auswahl des TCP-Ports für den HTTP- bzw. HTTPS-Zugriff sowie das Erscheinungsbild des SSV/WebUI.    
+**SSV/WebUI configuration:** In this area the whole WebUI can be switched off. Furthermore, various configuration settings are possible; e.g. the choice between the unprotected HTTP or the secure HTTPS protocol, the selection of the TCP port for HTTP or HTTPS access as well as the appearance of the SSV/WebUI.    
 
-**Change admin access acount:** Ändern des Benutzernamen und Passwort für den WebUI-Zugriff mit Administratorenrechten (*admin*).
+**Change admin access account:** Change the username and password for WebUI access with administrator rights (*admin*)
 
-**Change user access acount:** Festlegen bzw. verändern des Benutzernamen und Passwort für den WebUI-Zugriff mit eingeschränkten Benutzerrechten (*user*).
+**Change user access account:** Set or change the user name and password for WebUI access with restricted user rights (*user*).
 
 ## 5.1 Proxies > Web 
 
 ![Menü: Proxies > Web](https://ssv-comm.de/forum/bilder/938-proxies_1.png)
 
-Wenn in den Automatisierungsbaugruppen eines OT-Netzwerks HTTP-Server existieren, lässt sich über die Web-Proxy-Funktion Ihres Gateways die IT-Sicherheit für den Zugriff auf diese Server steigern. Dazu wird für jeden HTTP-Server jeweils ein Web-Proxy konfiguriert, der das unsichere HTTP-Protokoll in das sichere HTTPS-Protokoll umwandelt. Es entsteht also ein HTTP-to-HTTPS-Proxy. Anschließend erfolgt der Browserzugriff eines externen Nutzers nicht mehr direkt auf den HTTP-Server in der Automatisierungsbaugruppe, sondern per HTTPS auf den Proxy im Gateway.  
+If HTTP servers exist in the automation modules of an OT network, the web proxy function of your gateway can be used to increase IT security for access to these servers. For this purpose, a web proxy is configured for each HTTP server, which converts the insecure HTTP protocol into the secure HTTPS protocol. This creates an HTTP-to-HTTPS proxy. Subsequently, browser access by an external user no longer takes place directly to the HTTP server in the automation module, but via HTTPS to the proxy in the gateway.
 
-**General configuration:** Die Web-Proxy-Funktion Ihres Gateways kann hier ein- und ausgeschaltet werden.
+**General configuration:** The web proxy function of your gateway can be switched on and off here.
 
-**Proxy redirection:** In diesem Bereich werden die einzelnen Web-Proxy-Verbindungen als Übersicht angezeigt. Jede einzelne Proxy-Verbindung lässt sich jeweils editieren und löschen.
+**Proxy redirection:** In this area, the individual web proxy connections are displayed as an overview. Each individual proxy connection can be edited and deleted.
 
-**Create / edit a redirection entry:** Unter dieser Überschrift wird eine neue Web-Proxy-Verbindung erzeugt. Dafür sind jeweils die folgenden Eingaben erforderlich: 1.) die TCP-Portnummer für den *Listen on port*. 2.) Die IP-Adresse und die Portnummer für den *Relay to*-Part. Des Weiteren muss für einen HTTP-to-HTTPS-Proxy die *Encryption* (also die SSL- bzw. TLS-Funktion) explizit eingeschaltet werden. Ansonsten ergibt sich ein HTTP-to-HTTP-Proxy (also z. B. eine Portumleitung für den externen Webzugriff).
+**Create / edit a redirection entry:** Under this heading a new web proxy connection is created. This requires the following entries: 1.) The TCP port number for the *Listen on port*. 2.) The IP address and the port number for the *Relay to* part. Furthermore, for an HTTP-to-HTTPS proxy, the *Encryption* (i.e. the SSL or TLS function) must be explicitly enabled. Otherwise, the result is an HTTP-to-HTTP proxy (i.e., a port redirection for external web access).
 
-**SSL certificate:** für den HTTP-to-HTTPS-Proxy wird ein Zertifikat benötigt. Dieses Zertifikat lässt sich hier erstellen.
+**SSL certificate:** A certificate is required for the HTTP-to-HTTPS proxy. This certificate can be created here.
 
 ## 5.2 Proxies > DNS 
 
 ![Menü: Proxies > DNS](https://ssv-comm.de/forum/bilder/938-proxies_2.png)
 
-Ein DNS-Proxy leitet DNS-Anforderungen (DNS-Request) und DNS-Antworten (DNS-Response) zwischen DNS-Clients und einem DNS-Server weiter. Der DNS-Proxy vereinfacht das Netzwerkmanagement. Wenn sich z. B. die DNS-Serveradresse ändert, ist nur eine veränderte Konfiguration für den DNS-Proxy erforderlich, nicht aber für jeden einzelnen DNS-Client.
+A DNS proxy routes DNS requests (DNS request) and DNS responses (DNS response) between DNS clients and a DNS server. The DNS proxy simplifies network management. For example, if the DNS server address changes, only a change in configuration is required for the DNS proxy, not for each individual DNS client.
 
-**General configuration:** Hier können Sie den DNS-Proxy-Service ein- und ausschalten.
+**General configuration:** Here you can switch the DNS proxy service on and off.
 
 ## 5.3 Proxies > FTP 
 
 ![Menü: Proxies > FTP](https://ssv-comm.de/forum/bilder/938-proxies_3.png)
 
-Wenn in den Automatisierungsbaugruppen eines OT-Netzwerks FTP-Server existieren, lässt sich über die FTP-Proxy-Funktion Ihres Gateways der Zugriff auf diese Server auf andere TCP-Ports umleiten.
+If FTP servers exist in the automation systems of an OT network, the FTP proxy function of your gateway can be used to redirect access to these servers to other TCP ports.
 
-**General configuration:** Die FTP-Proxy-Funktion Ihres Gateways kann hier ein- und ausgeschaltet werden.
+**General configuration:** The FTP proxy function of your gateway can be switched on and off here.
 
-**Proxy redirection:** In diesem Bereich werden die einzelnen FTP-Proxy-Verbindungen als Übersicht angezeigt. Jede einzelne Proxy-Verbindung lässt sich jeweils editieren und löschen.
+**Proxy redirection:** In this area, the individual FTP proxy connections are displayed as an overview. Each individual proxy connection can be edited and deleted.
 
-**Create / edit a redirection entry:** Unter dieser Überschrift wird eine neue FTP-Proxy-Verbindung erzeugt. Dafür sind jeweils die folgenden Eingaben erforderlich: 1.) die TCP-Portnummer für den *Listen on port*. 2.) Die IP-Adresse und die Portnummer für den *Relay to*-Part.
+**Create / edit a redirection entry:** Under this heading, a new FTP proxy connection is created. This requires the following entries: 1.) The TCP port number for the *Listen on* port. 2.) The IP address and the port number for the *Relay to* part
 
 ## 5.4 Proxies > TCP 
 
 ![Menü: Proxies > TCP](https://ssv-comm.de/forum/bilder/938-proxies_4.png)
 
-Ein TCP-Proxy erzeugt einen TCP-Socket unter einer vorgegebenen TCP-Portnummer (*Listen on port* socket) und erstellt eine bidirektionale Datenverbindung zwischen diesem Socket und einem weiteren einstellbaren TCP-Socket (*Relay to* socket), der sich auf dem gleichen Gateway oder einem externen Rechnersystem mit einer statischen IP-Adresse befinden kann.
+A TCP proxy creates a TCP socket under a specified TCP port number (*Listen on port* socket) and creates a bidirectional data connection between this socket and another adjustable TCP socket (*Relay to* socket), which can be located on the same gateway or an external computer system with a static IP address.
 
-**General configuration:** Die TCP-Proxy-Funktion Ihres Gateways kann hier ein- und ausgeschaltet werden.
+**General configuration:** The TCP proxy function of your gateway can be switched on and off here.
 
-**Proxy redirection:** In diesem Bereich werden die einzelnen TCP-Proxy-Socket-Verbindungen als Übersicht angezeigt. Jede einzelne Socket-Verbindung lässt sich jeweils editieren und löschen.
+**Proxy redirection:** In this area, the individual TCP proxy socket connections are displayed as an overview. Each individual socket connection can be edited and deleted.
 
-**Create / edit a redirection entry:** Unter dieser Überschrift wird eine neue TCP-Proxy-Socket-Verbindung erzeugt. Dafür sind jeweils die folgenden Eingaben erforderlich: 1.) die TCP-Portnummer für den *Listen on port*. 2.) Die IP-Adresse und die Portnummer für den *Relay to*-Part.
+**Create / edit a redirection entry:** : Under this heading, a new TCP proxy socket connection is created. This requires the following entries: 1.) The TCP port number for the *Listen on port*. 2.) The IP address and port number for the *Relay to* part.
 
 ## 5.5 Proxies > UDP 
 
 ![Menü: Proxies > UDP](https://ssv-comm.de/forum/bilder/938-proxies_5.png)
 
-Ein UDP-Proxy erzeugt einen UDP-Socket unter einer vorgegebenen UPD-Portnummer (*Listen on port* socket) und erstellt eine bidirektionale Datenverbindung zwischen diesem Socket und einem weiteren einstellbaren UDP-Socket (*Relay to* socket), der sich auf dem gleichen Gateway oder einem externen Rechnersystem mit einer statischen IP-Adresse befinden kann.
+A UDP proxy creates a UDP socket under a specified UPD port number (Listen on port socket) and creates a bidirectional data connection between this socket and another adjustable UDP socket (Relay to socket), which can be located on the same gateway or an external computer system with a static IP address.
 
-**General configuration:** Die UPD-Proxy-Funktion Ihres Gateways kann hier ein- und ausgeschaltet werden.
+**General configuration:** The UPD proxy function of your gateway can be switched on and off here.
 
-**Proxy redirection:** In diesem Bereich werden die einzelnen UDP-Proxy-Socket-Verbindungen als Übersicht angezeigt. Jede einzelne Socket-Verbindung lässt sich jeweils editieren und löschen.
+**Proxy redirection:** In this area, the individual UDP proxy socket connections are displayed as an overview. Each individual socket connection can be edited and deleted.
 
-**Create / edit a redirection entry:** Unter dieser Überschrift wird eine neue UDP-Proxy-Socket-Verbindung erzeugt. Dafür sind jeweils die folgenden Eingaben erforderlich: 1.) die UDP-Portnummer für den *Listen on port*. 2.) Die IP-Adresse und die Portnummer für den *Relay to*-Part.
+**Create / edit a redirection entry:** Under this heading, a new UDP proxy socket connection is created. This requires the following entries: 1.) The UDP port number for the *Listen on port*. 2.) The IP address and the port number for the *Relay to* part.
 
 ## 6.1 Apps > Node-RED 
 
 ![Menü: Apps > Node-RED](https://ssv-comm.de/forum/bilder/938-apps_1.png)
 
-Einige nachträglich installierbare Gateway-Apps erzeugen unter der Menüleistenfunktion *Apps* eigene Einträge, um dem Benutzer eine Konfigurations-Webseite zur Verfügung zu stellen. Die hier dargestellte Abbildung zeigt als Beispiel die Konfigurationsseite der Node-RED-App. 
+Some subsequently installable gateway apps create their own entries in the menu bar function *Apps* in order to provide the user with a configuration web page. The figure shown here illustrates the configuration page of the Node-RED app as an example.
+ 
+**General configuration:** Node-RED can be switched on and off. If Node-RED is switched on, the software runs permanently as a process in the Linux operating system of the gateway and is also started automatically during every boot process. All flows generated under Node-RED are automatically brought to execution. Furthermore, the flows generated on one gateway under Node-RED can be exported here to a file on the PC and imported again on another gateway. In addition, a manual *Cleanup* can be generated for the memory area with the Node-RED flows (deletion of all flow components).
 
-**General configuration:** Die Node-RED lässt sich ein- und ausschalten. Ist Node-RED eingeschaltet, läuft die Software dauerhaft als Prozess im Linux-Betriebssystem des Gateways und wird auch bei jedem Bootvorgang automatisch gestartet. Alle unter Node-RED erzeugten Flows werden automatisch zur Ausführung gebracht. Darüber hinaus lassen sich die auf einem Gateway unter Node-RED erzeugten Flow hier in eine Datei auf dem PC exportieren und auf einem anderen Gateway wieder importieren. Zusätzlich kann für den Speicherbereich mit den Node-RED-Flow ein manueller *Cleanup* erzeugt werden (Löschen aller Flow-Komponenten).
-
-**Access protection:** Node-RED besitzt eine Web-basierte Oberfläche, die ein weiteres Browserfenster benötigt. Der Zugriff auf die Node-RED-Oberfläche lässt sich über eine Benutzeranmeldung mit Benutzername/Passwort schützen. Der Benutzername und das Passwort lassen sich hier einstellen. Des Weiteren kann der Webbrowser entweder über eine ungesicherte HTTP- oder eine geschützte HTTPS-Verbindung auf die Node-RED-Oberfläche zugreifen. Auch diese Eigenschaft ist hier einstellbar.
+**Access protection:** Node-RED has a web-based interface that requires another browser window. Access to the Node-RED interface can be protected via a user login with username/password. The username and password can be set here. Furthermore, the web browser can access the Node-RED interface either via an unsecured HTTP or a protected HTTPS connection. This property can also be set here.
+ 
