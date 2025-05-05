@@ -1,22 +1,40 @@
 # SSV/WebUI Function: RMG/938
 
-Before the first commissioning, please make sure to read the manual [Remote Maintenance Gateway RMG/938 - First Steps](https://ssv-embedded.de/doks/manuals/fs_rmg938_en.pdf) (PDF). In the manual, under **Accessing the SSV/WebUI**, you will find a description of how to access the SSV/WebUI from your PC via web browser and log in as administrator in this web-based configuration interface.
+The SSV/WebUI is a web-based user interface for configuring the gateway.
 
-After a successful login, a horizontal menu bar with the available functions will be displayed in the browser window.
+Before the first commissioning, please make sure to read the manual [Remote Maintenance Gateway RMG/938 - First Steps](https://ssv-embedded.de/doks/manuals/fs_rmg938_en.pdf) (PDF). The **Accessing the SSV/WebUI** chapter in the manual describes how to access the SSV/WebUI from your PC via a web browser and log in as an administrator.
+
+The SSV/WebUI displays a **horizontal menu bar** with the available functions in the header area.
 
 ![Übersicht: Menü](https://ssv-embedded.de/bilder/github/938-menue.png)
 
-## 1. Status 
+*Figure 1: SSV/WebUI menu bar*
 
-![Menü: Status](https://ssv-embedded.de/bilder/github/938-status.png) 
+> :information_source: **Please note:**
+> 
+> The menu item **Apps** is only visible if there is an app installed on the gateway. Please refer to **[App management](#24-system--app-management)** for more information.
 
-Overview page with the current system status and the addresses of all IP interfaces plus additional information about DNS servers and the default gateway.
+> :information_source: **IMPORTANT!**
+> 
+> All changes in the settings must always be saved by clicking the **[Apply]** button.
 
-## 2.1 System > System identification 
+# 1. STATUS 
 
-![Menü: System > System identification](https://ssv-embedded.de/bilder/github/938-system_1.png) 
+![Menü: Status](https://ssv-embedded.de/bilder/github/938-status.png)
 
-This web page of the SSV/WebUI summarizes various properties for gateway identification.
+*Figure 2: SSV/WebUI status page*
+
+The status page shows an overview of the current system status and the configuration of all network interfaces with information about IP addresses, DNS servers and the default gateway.
+
+# 2. SYSTEM
+
+## 2.1 System identification 
+
+![Menü: System > System identification](https://ssv-embedded.de/bilder/github/938-system_1.png)
+
+*Figure 3: SSV/WebUI system identification page*
+
+This page summarizes various properties for gateway identification.
 
 **Host name:** Input of an arbitrary name to be able to identify a certain gateway reliably.
 
@@ -26,11 +44,13 @@ This web page of the SSV/WebUI summarizes various properties for gateway identif
 
 **Serial number:** Preset serial number of the gateway. This number can be used to answer queries about the production week, factory settings, delivery, etc. with the help of the manufacturer database.
 
-**Identify device through front LED:** Pressing the flash button causes one of the gateway's front panel LEDs to flash for approx. 5 seconds. This allows a specific gateway to be visually identified.
+**Identify device through front LED:** Pressing the **[Flash]** button causes one of the gateway's front panel LEDs to flash for approx. 5 seconds. This allows a specific gateway to be visually identified.
 
-## 2.2 System > System management 
+## 2.2 System management 
 
-![Menü: System > System management](https://ssv-embedded.de/bilder/github/938-system_2.png) 
+![Menü: System > System management](https://ssv-embedded.de/bilder/github/938-system_2.png)
+
+*Figure 4: SSV/WebUI system management page*
 
 The functions summarized here can be used to force a system restart (reboot) and to duplicate the configuration settings or reset them to the factory default state.
 
@@ -38,53 +58,73 @@ The functions summarized here can be used to force a system restart (reboot) and
 
 **Configuration download:** The configuration set on this gateway via Web/UI can be downloaded as a file to the PC and saved using this function.
 
-**Configuration upload:** A configuration settings file saved on the PC can be uploaded to the gateway to apply the settings from the file. ***Caution: This action will cause your gateway settings to be lost. They will be overwritten by the uploaded file. This may lock you out of the SSV/WebUI for further access.***
+**Configuration upload:** A configuration settings file saved on the PC can be uploaded to the gateway to apply the settings from the file.
+
+> :warning: **ATTENTION!**
+>
+> **This action will cause your gateway settings to be lost. They will be overwritten by the uploaded file. This may lock you out of the SSV/WebUI for further access.**
 
 **Configuration reset:** Allows you to reset the settings you made via SSV/WebUI to the factory default state. For details on the factory default IP address, etc., refer to the [Remote Maintenance Gateway RMG/938 - First Steps](https://ssv-embedded.de/doks/manuals/fs_rmg938_en.pdf) (PDF).
 
-## 2.3 System > Firmware update 
+## 2.3 Firmware update 
 
-![Menü: System > Firmware update](https://ssv-embedded.de/bilder/github/938-system_3.png) 
+![Menü: System > Firmware update](https://ssv-embedded.de/bilder/github/ssvwebui_firmware.png)
+
+*Figure 5: SSV/WebUI firmware update page*
 
 **Firmware info:** This area shows you the current firmware version and a hash value for integrity checks on the installed firmware image. 
 
-**Firmware update configuration:** Your gateway supports various remote update options. This involves downloading and installing individual software components or even a completely new firmware image from a trusted server. Software updates are a critical matter. In case of doubt, contact our support before performing an update.
+**Firmware update via APT:** Here you can see from which file server the gateway obtains its firmware updates. Click on the **[Check]** button to see if there is an update available.
 
-## 2.4 System > App management 
+## 2.4 App management 
 
-![Menü: System > App management](https://ssv-embedded.de/bilder/github/938-system_4.png) 
+![Menü: System > App management](https://ssv-embedded.de/bilder/github/938-system_4.png)
 
-The functions of the gateway can be extended via special apps. Most apps are available fo free. Some apps require a paid license, which you can purchase through your sales contact.
+*Figure 6: SSV/WebUI app management page*
 
-**Install app:** This function provides you with an up-to-date overview of the apps available for this gateway plus the respective version numbers. The overview is generated by an online access to an external server. This function therefore requires an Internet connection of the gateway. You can install the desired app via the button on the right edge of the respective line.
+The functions of the gateway can be extended via special apps. Most apps are available fo free. Some apps require a paid license, which you can purchase through our sales team.
 
-**Installed apps:** Here, the respective installed apps are displayed together with the respective version information. The information button can be used to display further information on the regarding app. You can also delete apps that have already been installed at any time using the button with the trash can icon.
+**Install app:** Clicking the **[View]** button creates a new section called **Online available apps** with a list of available apps that is displayed at the bottom of this page. The list is generated by accessing an external server. This function therefore requires an **Internet connection** of the gateway.
 
-## 2.5 System > Time and date 
+**Installed apps:** Here, the respective installed apps are displayed together with the respective version information. Clicking the information button displays further information about the respective app. You can also delete already installed apps at any time using the button with the trash can icon.
 
-![Menü: System > Time and date](https://ssv-embedded.de/bilder/github/938-system_5.png) 
+**Online available apps:** This section is displayed after clicking the **[View]** button in the **Install app** section. It shows an up-to-date list of the apps available for this gateway plus the respective version numbers. You can install the desired app using the button on the right-hand side of the respective line.
+
+## 2.5 Time and date 
+
+![Menü: System > Time and date](https://ssv-embedded.de/bilder/github/ssvwebui_time.png)
+
+*Figure 7: SSV/WebUI time and date configuration page*
 
 **Local time zone configuration:** The time zone in which the gateway is operated is selected here. The setting is required in order to carry out the necessary correction during a time synchronization with time servers on the Internet (correction with respect to Greenwich Mean Time, i.e. the mean solar time at the Greenwich prime meridian). 
 
 **Time and date configuration:** At this point you can select whether the internal gateway real-time clock is synchronized periodically via an external time server in a local network or on the Internet or whether a (one-time) manual time synchronization is to be performed via the SSV/WebUI connection.  
 
-## 2.6 System > COM ports 
+## 2.6 COM ports 
 
-![Menü: System > COM ports](https://ssv-embedded.de/bilder/github/938-system_6.png) 
+![Menü: System > COM ports](https://ssv-embedded.de/bilder/github/938-system_6.png)
 
-The serial interfaces of the gateway can be used universally for different applications. Via this web page of the SSV/WebUI, you can reserve individual interfaces for operation as a serial console (remote console) or as a "Com port redirector". By such a reservation the respective interface is no longer available for other applications.
+*Figure 8: SSV/WebUI COM ports configuration page*
 
-Please note: The COM1 port of this gateway is located inside the housing. It is not accessible from the outside. This interface is fixed as a serial console for service purposes. Any other use is not possible. There are three options for the other interfaces:
+The serial interfaces of the gateway can be used universally for different applications. You can reserve individual interfaces for operation as a **remote console** (serial console) or as a **Com port redirector**. By such a reservation the respective interface is no longer available for other applications.
+
+> :information_source: **Please note:**
+>
+> The **COM1 port** of the gateway is located inside without access from outside. It is fixed as a serial console for service purposes. No other use is possible.
+
+For the other interfaces, three options are available via the dropdown menu :
 
 **None:** The serial interface can be used by any application, e.g. by Node-RED for Modbus-based communication with external modules. 
 
-**Remote console:** The respective serial port forms a console for communication with the Linux operating system. Please note that a login with user name and password is required for the use.
+**Remote console:** The respective serial port forms a console for communication with the Linux operating system. In this case a login with user name and password is required. The **password** must be set under **Services > Remote access**.
 
 **Com port redirector:** This function forms a protocol converter between the IP-based transport protocols UDP or TCP, which are available e.g. for the LAN interfaces, and the respective assigned serial port. The UPD or TCP side can optionally be operated in client or server mode. 
 
-## 2.7 System > Watchdog 
+## 2.7 Watchdog 
 
 ![Menü: System > Watchdog](https://ssv-embedded.de/bilder/github/938-system_7.png)
+
+*Figure 9: SSV/WebUI watchdog configuration page*
 
 Your gateway has various watchdog timers or watchdog counters that are intended to ensure the most trouble-free 24/7 operation possible. Individual configuration setting options are available for these watchdogs.
 
@@ -112,19 +152,25 @@ In many use cases, a gateway simultaneously maintains local connections to other
 
 **Mobile: reboot count:** This function is only intended for gateways with an internal cellular modem.
 
-## 2.8 System > Logging 
+## 2.8 Logging 
 
-![Menü: System > Logging](https://ssv-embedded.de/bilder/github/938-system_8.png)
+![Menü: System > Logging](https://ssv-embedded.de/bilder/github/ssvwebui_log.png)
+
+*Figure 10: SSV/WebUI logging page*
 
 The gateway generates a logging file with extensive entries at runtime. It is used for diagnostics and for finding the cause of striking system behavior and other events. The logging file is regenerated with every gateway boot process and is lost when the supply voltage is switched off.
 
-**Download log file:** This function allows you to download the logging file to your PC and save it there.
+**Download log file:** This function allows you to download the logging file.
 
-**Download service startup graph:** Using this feature you can download a graph with an overview of the startup of individual system services to the PC and save it there. 
+**Download service startup graph:** Using this feature you can download a graph with an overview of the startup of individual system services.
 
-## 3.1 Network > WAN 
+# 3. NETWORK
+
+## 3.1 WAN 
 
 ![Menü: Network > WAN](https://ssv-embedded.de/bilder/github/938-network_1.png)
+
+*Figure 11: SSV/WebUI WAN configuration page*
 
 In many use cases, a gateway simultaneously maintains local connections to other systems as well as various external connections to the Internet (so-called WAN connections = Wide Area Network connections), e.g., to a time server and other special cloud and IoT service platforms. WAN connections are much more susceptible to disturbances than local connections. The following setting option can be used to configure ping-based WAN status monitoring (ping watchdog) in order to select a different physical gateway interface as the WAN interface in the event of a disturbance (WAN fallback interface, for example LAN2 instead of LAN1).
 
@@ -132,9 +178,11 @@ In many use cases, a gateway simultaneously maintains local connections to other
 
 **WAN watchdog:** Here the ping watchdog for the WAN interface can be activated. To activate it, a ping test interval time must be selected (e.g. one ping test every 15 minutes). Furthermore, the DNS name or the IP address of the system that is to be reached via the WAN interface by ping test must be selected. In addition, the action to be performed in the event of an error in the ping test can be defined (see *WAN fallback interface*).
 
-## 3.2 Network > LAN1 
+## 3.2 LAN1 
 
 ![Menü: Network > LAN1](https://ssv-embedded.de/bilder/github/938-network_2.png)
+
+*Figure 12: SSV/WebUI LAN1 configuration page*
 
 **Interface configuration for LAN1:** Enable or disable the LAN1 interface.
 
@@ -144,9 +192,11 @@ In many use cases, a gateway simultaneously maintains local connections to other
 
 **Expert configurations:** Various "expert settings" are available under this generic term. Changes should only be made by appropriately trained specialist personnel. Enable UPnP discovery (UPnP = Universal Plug and Play) is a special case. If this function is enabled, you can search for the gateway in a local network with a UPnP-capable device without knowing the IP address of the LAN1 interface. 
 
-## 3.3 Network > LAN2 
+## 3.3 LAN2 
 
 ![Menü: Network > LAN2](https://ssv-embedded.de/bilder/github/938-network_3.png)
+
+*Figure 13: SSV/WebUI LAN2 configuration page*
 
 **Interface configuration for LAN2:** Enable or disable the LAN2 interface.
 
@@ -156,19 +206,63 @@ In many use cases, a gateway simultaneously maintains local connections to other
 
 **Expert configurations:** Various "expert settings" are available under this generic heading. Changes should only be made by appropriately trained specialists. 
 
-## 3.4 Network > Bluetooth 
+## 3.4 Mobile 
+
+![Menü: Network > Mobile](https://ssv-embedded.de/bilder/github/ssvwebui_mobile.png)
+
+*Figure 14: SSV/WebUI mobile configuration page*
+
+**Modem configuration:**
+Enable or disable the modem interface, view the connection status, and check the current signal strength. For more detailed information about the connection status, click on **(log)** in the first line on the right.
+
+**SIM card settings:**
+Enter the SIM card PIN.
+
+**ISP settings:**
+Let the provider be recognized automatically or disable the checkbox and choose your provider manually.
+
+> :information_source: **Please note:**
+> 
+> If you received an **APN** (Access Point Name) from your provider, disable the checkbox and choose **other** from the dropdown menu. Two more lines will then appear in which you can enter the APN and choose the **Authentication method** from a dropdown menu.
+
+**Connection settings:**
+Choose from the dropdown menu when the connection should be established.
+
+**Network configuration:**
+Set the route metric for the modem interface and enter a DNS server if needed.
+
+> :information_source: **Please note:**
+> 
+> If the gateway cannot establish a connection to the mobile network, please try setting up the gateway in another location with better mobile reception.
+
+> :information_source: **IMPORTANT!**
+> 
+> After configuring the mobile network, open **Network > WAN** and select **MOBILE** from the dropdown menu in the **WAN interface** line.
+
+
+## 3.5 Bluetooth 
 
 ![Menü: Network > Bluetooth](https://ssv-embedded.de/bilder/github/938-network_4.png)
 
-**General configuration:** The Bluetooth Low Energy (BLE) interface of the gateway can be switched on and off.
+*Figure 15: SSV/WebUI Bluetooth configuration page*
 
-## 3.5 Network > Firewall and NAT 
+> :information_source: **Please note:**
+>
+> This configuration page is only available if the gateway is equipped with a Bluetooth module.
 
-![Menü: Network > Firewall and NAT](https://ssv-embedded.de/bilder/github/938-network_5.png)
+**General configuration:** Enable or disable the Bluetooth Low Energy (BLE) interface of the gateway.
+
+## 3.6 Firewall and NAT 
+
+![Menü: Network > Firewall and NAT](https://ssv-embedded.de/bilder/github/ssvwebui_firewall.png)
+
+*Figure 16: SSV/WebUI firewall and NAT configuration page*
 
 Your gateway has a complex firewall system that can be used to monitor and filter the data traffic of all existing IP interfaces. The setting options are very extensive. If you want to use the firewall, an appropriately trained expert is definitely required for the settings. You can alternatively contact our support at any time.
 
-Please note that the gateway firewall supports both IPv4 and IPv6. However, both IP protocol variants require their own rules in each case.
+> :information_source: **Please note:**
+>
+> The gateway firewall supports both IPv4 and IPv6. However, both IP protocol variants require their own rules in each case.
 
 **Firewall configuration:** In this section you can display the current firewall rules and enable/disable and view a log file for firewall diagnostic tasks. 
 
@@ -176,18 +270,23 @@ Please note that the gateway firewall supports both IPv4 and IPv6. However, both
 
 **Forwarding with IP-Masquerading and NAT:** Under this entry, NAT-based routing between the gateway and the WAN (Wide Area Network) can be switched on and off. 
 
-## 4.1 Services > General 
+# 4. SERVICES
+
+## 4.1 General 
 
 ![Menü: Services > General](https://ssv-embedded.de/bilder/github/938-services_1.png)
+
+*Figure 17: SSV/WebUI general services configuration page*
 
 Your gateway has both a Telnet and FTP server for compatibility with older SSV products. Both protocols are now considered insecure because they are based on unencrypted data transmission. In this respect, these protocols should be switched off for practical use of the gateway.
 
 **General service configuration:** Here you can enable or disable access to the gateway via Telnet or FTP. Furthermore, the Shellinabox service can be enabled or disabled. Shellinabox (Shell-in-a-box) is a web page that can be accessed via a web browser, in which you can communicate with the gateway via a Linux console.    
 
-## 4.2 Services > OpenVPN 
+## 4.2 OpenVPN 
 
-![Menü: Services > OpenVPN](https://ssv-embedded.de/bilder/github/938-services_2a.png)
-![Menü: Services > OpenVPN](https://ssv-embedded.de/bilder/github/938-services_2b.png)
+![Menü: Services > OpenVPN](https://ssv-embedded.de/bilder/github/ssvwebui_openvpn.png)
+
+*Figure 18: SSV/WebUI OpenVPN configuration page*
 
 A typical application example for industrial gateways is their use in virtual private networks (VPNs) to implement remote maintenance applications. Here, the gateway forms a VPN client endpoint and enables a service engineer to securely remotely access the assemblies located behind the gateway (e.g., controllers in a local OT LAN). In such an application, all VPN clients connect to a central VPN server. Your gateway can simultaneously maintain connections to a maximum of three external VPN servers (see tabs *Client 1*, *Client 2* and *Client 3)*. Each connection can be configured individually with different certificates. In addition, the gateway can also be used as a VPN server (see *Server* tab).
 
@@ -195,9 +294,11 @@ A typical application example for industrial gateways is their use in virtual pr
 
 **OpenVPN certificates and keys:** In this area, the certificate and key management for a VPN client connection takes place in order to be able to connect to the respective OpenVPN server.
 
-## 4.3 Services > DynDNS 
+## 4.3 DynDNS 
 
 ![Menü: Services > DynDNS](https://ssv-embedded.de/bilder/github/938-services_3.png)
+
+*Figure 19: SSV/WebUI DynDNS configuration page*
 
 Your gateway enables applications in which it must itself be accessible via a DNS name on the Internet. One example would be operation as a VPN server. As such a gateway usually does not receive a static IP address on the Internet, DynDNS can be used as an alternative.
 
@@ -209,9 +310,11 @@ DynDNS or DDNS are abbreviations for dynamic DNS. This is a technique for dynami
 
 **Notification to webserver after IP address changes:** Enable and disable a notification service in case the IP address of the gateway has changed on the Internet.
 
-## 4.4 Services > DHCP Server 
+## 4.4 DHCP Server 
 
 ![Menü: Services > DHCP Server](https://ssv-embedded.de/bilder/github/938-services_4.png)
+
+*Figure 20: SSV/WebUI DHCP server configuration page*
 
 The gateway supports automatic IP address assignment via Dynamic Host Configuration Protocol (DHCP) to OT modules (DHCP client modules) that are connected to a gateway LAN interface. In other words, the gateway can be used as a DHCP server.
 
@@ -219,99 +322,166 @@ The gateway supports automatic IP address assignment via Dynamic Host Configurat
 
 **Address range:** Specify the IP address range from which IP addresses are assigned to the client modules via DHCP. 
 
-## 4.5 Services > SNMP 
+## 4.5 SNMP 
 
 ![Menü: Services > SNMP](https://ssv-embedded.de/bilder/github/938-services_5.png)
+
+*Figure 21: SSV/WebUI SNMP configuration page*
 
 The Simple Network Management Protocol (SNMP) is a network protocol developed by the IETF to monitor gateways and other network modules from a central management system and to change certain parameters. The protocol manages the communication between the monitored modules and the management system.
 
 **SNMP configuration:** Switching SNMP operation on and off. Selection of the SNMP version and other parameters.
 
-## 4.6 Services > Remote Access 
+## 4.6 Remote Access 
 
-![Menü: Services > Remote Access](https://ssv-embedded.de/bilder/github/938-services_6.png)
+![Menü: Services > Remote Access](https://ssv-embedded.de/bilder/github/ssvwebui_remote.png)
 
-**OpenSSH configuration:** SSH-based administrator access to the gateway is supported (SSH Secure Shell). An OpenSSH daemon (SSHD) runs within the gateway operating system for this purpose. The SSHD can be enabled, disabled and configured here. Furthermore, the current RSA key fingerprint is displayed.  
+*Figure 22: SSV/WebUI remote access configuration page*
 
-**Change passwort for user "root":** SSH access to the gateway is always performed with administrator rights (user "root"). The password for this user can be changed here. 
+**OpenSSH configuration:** SSH-based administrator access to the gateway is supported (SSH Secure Shell). An OpenSSH daemon (SSHD) runs within the gateway operating system for this purpose. The SSHD can be enabled, disabled and configured here. Furthermore, the current RSA key fingerprint is displayed. Enable the checkbox at **Permit root login** to enable SSH access with administrator rights (user *root*).
 
-## 4.7 Services > WebUI 
+**Change password for user "root":** The password must consist of at least 8 characters. This password is also used for the **remote console** (serial console) at **System > COM ports** and for **FTP** at **Proxies > FTP**.
 
-![Menü: Services > WebUI](https://ssv-embedded.de/bilder/github/938-services_7.png)
+## 4.7 WebUI 
 
-The SSV/WebUI of your gateway supports two different user classes: 1) an administrator (*admin*) with all rights and 2) a user (*user*) with restricted rights, who is also only presented with an adjustable selective view of the SSV/WebUI.
+![Menü: Services > WebUI](https://ssv-embedded.de/bilder/github/ssvwebui_webui.png)
+
+*Figure 23: SSV/WebUI WebUI configuration page*
+
+The SSV/WebUI of your gateway supports two different user classes:
+
++ An administrator (*admin*) with all rights
+
++ A user (*user*) with restricted rights, who is also only presented with an adjustable selective view of the SSV/WebUI.
 
 **SSV/WebUI configuration:** In this area the whole WebUI can be switched off. Furthermore, various configuration settings are possible; e.g. the choice between the unprotected HTTP or the secure HTTPS protocol, the selection of the TCP port for HTTP or HTTPS access as well as the appearance of the SSV/WebUI.    
 
-**Change admin access account:** Change the username and password for WebUI access with administrator rights (*admin*)
+**Change admin access account:** Change the username and password for WebUI access with administrator rights (*admin*).
 
 **Change user access account:** Set or change the user name and password for WebUI access with restricted user rights (*user*).
 
-## 5.1 Proxies > Web 
+## 4.8 Autostart 
+
+![Menü: Services > Autostart](https://ssv-embedded.de/bilder/github/ssvwebui_autostart.png)
+
+*Figure 24: SSV/WebUI autostart configuration page*
+
+In this section it is possible to upload an own program that is executed automatically on system start.
+
+**Enable service:** Enable or disable the execution of the autostart program.
+
+**Upload program:** Choose and upload an autostart program file (script, executable or tar/tgz).
+
+**Current program:** View the current autostart program file or directory or delete the autostart porgram. 
+
+# 5. PROXIES
+
+## 5.1 Web 
 
 ![Menü: Proxies > Web](https://ssv-embedded.de/bilder/github/938-proxies_1.png)
 
+*Figure 25: SSV/WebUI Web proxy configuration page*
+
 If HTTP servers exist in the automation modules of an OT network, the web proxy function of your gateway can be used to increase IT security for access to these servers. For this purpose, a web proxy is configured for each HTTP server, which converts the insecure HTTP protocol into the secure HTTPS protocol. This creates an HTTP-to-HTTPS proxy. Subsequently, browser access by an external user no longer takes place directly to the HTTP server in the automation module, but via HTTPS to the proxy in the gateway.
 
-**General configuration:** The web proxy function of your gateway can be switched on and off here.
+**General configuration:** Enable or disable the web proxy function.
 
-**Proxy redirection:** In this area, the individual web proxy connections are displayed as an overview. Each individual proxy connection can be edited and deleted.
+**Proxy redirection:** List of all individual web proxy connections. Each proxy connection can be edited and deleted.
 
-**Create / edit a redirection entry:** Under this heading a new web proxy connection is created. This requires the following entries: 1.) The TCP port number for the *Listen on port*. 2.) The IP address and the port number for the *Relay to* part. Furthermore, for an HTTP-to-HTTPS proxy, the *Encryption* (i.e. the SSL or TLS function) must be explicitly enabled. Otherwise, the result is an HTTP-to-HTTP proxy (i.e., a port redirection for external web access).
+**Create / edit a redirection entry:** Create new web proxy connections. This requires the following entries:
+
+1. The IP address and the port number for the **Relay to** part.
+
+2. The UDP port number for the **Listen on port**.
+
+> :information_source: **Please note:**
+> 
+> For an HTTP-to-HTTPS proxy, the **Encryption** (i.e. the SSL or TLS function) must be explicitly enabled. Otherwise, the result is an HTTP-to-HTTP proxy (i.e., a port redirection for external web access).
 
 **SSL certificate:** A certificate is required for the HTTP-to-HTTPS proxy. This certificate can be created here.
 
-## 5.2 Proxies > DNS 
+## 5.2 DNS 
 
 ![Menü: Proxies > DNS](https://ssv-embedded.de/bilder/github/938-proxies_2.png)
 
+*Figure 26: SSV/WebUI DNS proxy configuration page*
+
 A DNS proxy routes DNS requests (DNS request) and DNS responses (DNS response) between DNS clients and a DNS server. The DNS proxy simplifies network management. For example, if the DNS server address changes, only a change in configuration is required for the DNS proxy, not for each individual DNS client.
 
-**General configuration:** Here you can switch the DNS proxy service on and off.
+**General configuration:** Enable or disable the DNS proxy service.
 
-## 5.3 Proxies > FTP 
+## 5.3 FTP 
 
 ![Menü: Proxies > FTP](https://ssv-embedded.de/bilder/github/938-proxies_3.png)
 
+*Figure 27: SSV/WebUI FTP proxy configuration page*
+
 If FTP servers exist in the automation systems of an OT network, the FTP proxy function of your gateway can be used to redirect access to these servers to other TCP ports.
 
-**General configuration:** The FTP proxy function of your gateway can be switched on and off here.
+**General configuration:** Enable or disable the FTP proxy function.
 
-**Proxy redirection:** In this area, the individual FTP proxy connections are displayed as an overview. Each individual proxy connection can be edited and deleted.
+**Proxy redirection:** List of all individual FTP proxy connections. Each proxy connection can be edited and deleted.
 
-**Create / edit a redirection entry:** Under this heading, a new FTP proxy connection is created. This requires the following entries: 1.) The TCP port number for the *Listen on* port. 2.) The IP address and the port number for the *Relay to* part
+**Create / edit a redirection entry:** Create new FTP proxy connections. This requires  following entries:
 
-## 5.4 Proxies > TCP 
+1. The IP address and the port number for the **Relay to** part.
+
+2. The UDP port number for the **Listen on port**.
+
+> :information_source: **Please note:**
+>
+> The password for FTP access must be set under **Services > Remote access**.
+
+## 5.4 TCP 
 
 ![Menü: Proxies > TCP](https://ssv-embedded.de/bilder/github/938-proxies_4.png)
 
+*Figure 28: SSV/WebUI TCP proxy configuration page*
+
 A TCP proxy creates a TCP socket under a specified TCP port number (*Listen on port* socket) and creates a bidirectional data connection between this socket and another adjustable TCP socket (*Relay to* socket), which can be located on the same gateway or an external computer system with a static IP address.
 
-**General configuration:** The TCP proxy function of your gateway can be switched on and off here.
+**General configuration:** Enable or disable the TCP proxy function.
 
-**Proxy redirection:** In this area, the individual TCP proxy socket connections are displayed as an overview. Each individual socket connection can be edited and deleted.
+**Proxy redirection:** List of all individual TCP proxy socket connections. Each socket connection can be edited and deleted.
 
-**Create / edit a redirection entry:** : Under this heading, a new TCP proxy socket connection is created. This requires the following entries: 1.) The TCP port number for the *Listen on port*. 2.) The IP address and port number for the *Relay to* part.
+**Create / edit a redirection entry:** : Create new TCP proxy socket connections. This requires  following entries:
 
-## 5.5 Proxies > UDP 
+1. The IP address and the port number for the **Relay to** part.
+
+2. The UDP port number for the **Listen on port**.
+
+## 5.5 UDP 
 
 ![Menü: Proxies > UDP](https://ssv-embedded.de/bilder/github/938-proxies_5.png)
 
+*Figure 29: SSV/WebUI UDP proxy configuration page*
+
 A UDP proxy creates a UDP socket under a specified UPD port number (Listen on port socket) and creates a bidirectional data connection between this socket and another adjustable UDP socket (Relay to socket), which can be located on the same gateway or an external computer system with a static IP address.
 
-**General configuration:** The UPD proxy function of your gateway can be switched on and off here.
+**General configuration:** Enable or disable the UPD proxy function.
 
-**Proxy redirection:** In this area, the individual UDP proxy socket connections are displayed as an overview. Each individual socket connection can be edited and deleted.
+**Proxy redirection:** List of all individual UDP proxy socket connections. Each socket connection can be edited and deleted.
 
-**Create / edit a redirection entry:** Under this heading, a new UDP proxy socket connection is created. This requires the following entries: 1.) The UDP port number for the *Listen on port*. 2.) The IP address and the port number for the *Relay to* part.
+**Create / edit a redirection entry:** Create new UDP proxy socket connections. This requires the following entries:
 
-## 6.1 Apps > Node-RED 
+1. The IP address and the port number for the **Relay to** part.
+
+2. The UDP port number for the **Listen on port**.
+
+# 6. APPS
+
+## 6.1 Node-RED 
 
 ![Menü: Apps > Node-RED](https://ssv-embedded.de/bilder/github/938-apps_1.png)
 
-Some subsequently installable gateway apps create their own entries in the menu bar function *Apps* in order to provide the user with a configuration web page. The figure shown here illustrates the configuration page of the Node-RED app as an example.
- 
-**General configuration:** Node-RED can be switched on and off. If Node-RED is switched on, the software runs permanently as a process in the Linux operating system of the gateway and is also started automatically during every boot process. All flows generated under Node-RED are automatically brought to execution. Furthermore, the flows generated on one gateway under Node-RED can be exported here to a file on the PC and imported again on another gateway. In addition, a manual *Cleanup* can be generated for the memory area with the Node-RED flows (deletion of all flow components).
+*Figure 30: SSV/WebUI app configuration page*
 
-**Access protection:** Node-RED has a web-based interface that requires another browser window. Access to the Node-RED interface can be protected via a user login with username/password. The username and password can be set here. Furthermore, the web browser can access the Node-RED interface either via an unsecured HTTP or a protected HTTPS connection. This property can also be set here.
+Some subsequently installable gateway apps create their own entries in the menu item **Apps** in order to provide a configuration page. Figure 30 illustrates the configuration page of the Node-RED app as an example.
  
+**General configuration:** Enable or disable Node-RED. If Node-RED is enabled, it runs permanently as a process in the Linux operating system of the gateway and is also started automatically during every boot process. All flows generated under Node-RED are automatically brought to execution. Furthermore, the flows generated on one gateway under Node-RED can be exported here to a file on the PC and imported again on another gateway. In addition, a manual **Cleanup** can be executed for the memory area with the Node-RED flows and deletes all flow components.
+
+**Access protection:** Node-RED has a web-based interface running in a browser window. Access to the Node-RED interface can be protected via a user login with username/password. The username and password can be set here. Furthermore, the web browser can access the Node-RED interface either via an unsecured HTTP or a protected HTTPS connection. This property can also be set here.
+
+---
+
+*author: wbu // review: hne // 04-2025 // Rev. 2.0*
